@@ -88,11 +88,12 @@
         <h2>Contact Me</h2>
         <div class="contact-section" >
             <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="7f074eb7-3f6e-430e-a20f-dcd816dfa564">
                 <h3>Name*</h3>
                 <input type="text" name="UserName" placeholder="Your Name" class="contact-input" required>
                 <small class="error-message"></small>
                 <h3>Email*</h3>
-                <input type="email" name="UserEmail" placeholder="Your Email" class="contact-input" required>
+                <input id="email" type="email" name="UserEmail" placeholder="Your Email" class="contact-input" required>
                 <small class="error-message"></small>
                 <h3>Contact No.</h3>
                 <input 
@@ -106,7 +107,7 @@
               >                
               <small class="error-message"></small>
                 <h3>Message*</h3>
-                <textarea id="message" class="contact-input" placeholder="Type your message" required ></textarea>
+                <textarea name="message" id="message" class="contact-input" placeholder="Type your message" required ></textarea>
                 <small class="error-message"></small>
                 <button type="submit" class="cta-button">Send</button>
             </form>
