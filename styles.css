@@ -229,16 +229,22 @@ Main Section */
 }
 
 .contact-section{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 3rem auto;
     padding: 2rem;
     border-radius: 15px;
     background: rgba(255,255,255,0.05);
-    transition: all 0.3s ease;
     border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .contact-section:hover {
@@ -248,25 +254,19 @@ Main Section */
 }
 
 .contact-input{
-    padding: 2rem;
-    border-radius: 15px;
-    background: rgba(255,255,255,0.05);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
     color: white;
-    height: 5vh;
-    width: 50rem;
+    font-size: 1rem;
     outline: none;
-    border: none;
-    scroll-behavior: unset;
-    margin: 1%;
     transition: 0.3s ease;
 }
 .contact-input:focus{
-    transform: translateY(-10px);
     border-color: var(--accent);
-    box-shadow: 0 10px 30px var(--accent-glow);
+    box-shadow: 0 0 10px var(--accent-glow);
 }
 
 
@@ -274,6 +274,11 @@ textarea {
     resize: none;
     overflow: hidden;
   }
+
+  textarea.contact-input {
+    min-height: 120px;
+    resize: none;
+}
 
   .contact-input.success {
     border: 2px solid #2ecc71;
@@ -337,6 +342,16 @@ footer{
     .logo{
         font-size: 1.5rem;
         padding-left: 2rem;
+    }
+
+    .contact-section {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+    }
+
+    .contact-input {
+        font-size: 0.95rem;
+        padding: 0.9rem;
     }
 }
 
