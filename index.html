@@ -3,235 +3,355 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vibhanshu Chaturvedi</title>
+<title>Vibhanshu Chaturvedi | Full Stack Developer · IIT Kharagpur</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
 <!-- Navigation -->
 <nav class="navbar">
-<a href="#home" class="logo">Vibhanshu Chaturvedi</a>
+  <a href="#home" class="logo">Vibhanshu Chaturvedi</a>
 
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
 
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#home"     class="mobile-link">Home</a></li>
+    <li><a href="#about"    class="mobile-link">About</a></li>
+    <li><a href="#skills"   class="mobile-link">Skills</a></li>
+    <li><a href="#projects" class="mobile-link">Projects</a></li>
+    <li><a href="#contact"  class="mobile-link">Contact</a></li>
+  </ul>
+</div>
 
-<!-- MAIN -->
+
+<!-- HERO -->
 <section id="home" class="main">
 
-<div class="main-content">
+  <div class="main-content">
+    <p class="hero-sub reveal">B.Tech · Agricultural & Food Engineering · IIT Kharagpur '27</p>
 
-<h1 class="hero-title">
-Hi! I am <span class="name">Vibhanshu</span>
-</h1>
+    <h1 class="hero-title reveal">
+      Hi! I am <span class="name">Vibhanshu</span>
+    </h1>
 
-<h2 class="typed-text">
-<span id="typed"></span>
-</h2>
+    <h2 class="typed-text reveal">
+      <span id="typed"></span>
+    </h2>
 
-<a href="#projects" class="cta-button">See my Work</a>
+    <p class="hero-desc reveal">
+      Dual-degree student at IIT Kharagpur building at the intersection of full-stack engineering and digital humanities.
+      <strong>AIR 44 · GATE 2026</strong> · <strong>AIR 8454 · JEE Advanced 2022</strong>.
+    </p>
 
-</div>
+    <div class="hero-ctas reveal">
+      <a href="#projects" class="cta-button">See my Work</a>
+      <a href="assets/CV.pdf" download class="cta-button cta-outline">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+    </div>
+  </div>
 
-<div class="main-image">
-<img src="profile.png" class="profile-img">
-</div>
+  <div class="main-image reveal">
+    <img src="profile.png" class="profile-img" alt="Vibhanshu Chaturvedi">
+  </div>
 
+</section>
+
+
+<!-- ABOUT + EDUCATION -->
+<section id="about" class="about">
+  <h2 class="reveal">About Me</h2>
+
+  <div class="about-grid">
+
+    <div class="about-text reveal">
+      <p>
+        I'm a dual-degree student at <strong>IIT Kharagpur</strong> pursuing B.Tech in Agricultural & Food Engineering and M.Tech in Food Process Engineering, with a micro-specialisation in <strong>Artificial Intelligence &amp; Applications</strong>.
+      </p>
+      <p>
+        I build full-stack web applications and have a particular passion for projects that sit at the crossroads of technology and culture — like the <strong>Bhakti Tradition Map</strong>, a WebGIS platform that spatialises over 1,000 years of Indian devotional history.
+      </p>
+      <p>
+        Outside code, I've led social and cultural initiatives for 440+ students as General Secretary of Patel Hall, and co-directed a silver-winning Nukkad Natak at IIT KGP's General Championship.
+      </p>
+    </div>
+
+    <div class="education reveal">
+      <h3>Education</h3>
+
+      <div class="edu-item">
+        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="edu-details">
+          <h4>IIT Kharagpur</h4>
+          <p>B.Tech (Hons.) + M.Tech Dual Degree · 2022–2027</p>
+          <span class="edu-meta">CGPA: 7.88 / 10 · Micro Spl. in AI &amp; Applications</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+        <div class="edu-details">
+          <h4>Madav Rao Scindia Public School</h4>
+          <p>CBSE Class XII · 2021</p>
+          <span class="edu-meta">97.8% · Shahjahanpur</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="edu-details">
+          <h4>Takshashila Public School</h4>
+          <p>CBSE Class X · 2019</p>
+          <span class="edu-meta">99% · Shahjahanpur</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- HIGHLIGHTS STRIP -->
+<section class="highlights">
+  <div class="highlight-card reveal">
+    <span class="highlight-num">44</span>
+    <span class="highlight-label">AIR · GATE 2026 (AG)</span>
+  </div>
+  <div class="highlight-card reveal">
+    <span class="highlight-num">8454</span>
+    <span class="highlight-label">AIR · JEE Advanced 2022</span>
+  </div>
+  <div class="highlight-card reveal">
+    <span class="highlight-num">7.88</span>
+    <span class="highlight-label">CGPA · IIT Kharagpur</span>
+  </div>
+  <div class="highlight-card reveal">
+    <span class="highlight-num">13</span>
+    <span class="highlight-label">EX Grades · 5 Semesters</span>
+  </div>
+  <div class="highlight-card reveal">
+    <span class="highlight-num">440+</span>
+    <span class="highlight-label">Students Led · Patel Hall</span>
+  </div>
 </section>
 
 
 <!-- SKILLS -->
 <section id="skills" class="skills">
+  <h2 class="reveal">Technical Expertise</h2>
 
-<h2>Technical Expertise</h2>
+  <div class="skills-grid">
 
-<div class="skills-grid">
+    <div class="skill-card reveal">
+      <i class="fa-solid fa-code"></i>
+      <h3>Languages</h3>
+      <div class="skill-pills">
+        <span class="pill"><i class="devicon-c-plain colored"></i> C</span>
+        <span class="pill"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+        <span class="pill"><i class="devicon-python-plain colored"></i> Python</span>
+        <span class="pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+        <span class="pill"><i class="devicon-azuresqldatabase-plain colored"></i> SQL</span>
+        <span class="pill"><i class="devicon-bash-plain colored"></i> Bash</span>
+      </div>
+    </div>
 
-<div class="skill-card">
-<i class="fa-solid fa-code"></i>
-<h3>Frontend Development</h3>
-<p>React, HTML, CSS, JavaScript</p>
-</div>
+    <div class="skill-card reveal">
+      <i class="fa-solid fa-laptop-code"></i>
+      <h3>Frontend</h3>
+      <div class="skill-pills">
+        <span class="pill"><i class="devicon-react-original colored"></i> React</span>
+        <span class="pill"><i class="devicon-html5-plain colored"></i> HTML5</span>
+        <span class="pill"><i class="devicon-css3-plain colored"></i> CSS3</span>
+        <span class="pill"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</span>
+        <span class="pill"><i class="devicon-leaflet-plain colored"></i> Leaflet.js</span>
+      </div>
+    </div>
 
-<div class="skill-card">
-<i class="fa-solid fa-server"></i>
-<h3>Backend Development</h3>
-<p>Node.js, MongoDB, Leaflet.js</p>
-</div>
+    <div class="skill-card reveal">
+      <i class="fa-solid fa-server"></i>
+      <h3>Backend</h3>
+      <div class="skill-pills">
+        <span class="pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+        <span class="pill"><i class="devicon-express-original colored pill-invert"></i> Express.js</span>
+        <span class="pill"><i class="devicon-socketio-original colored pill-invert"></i> Socket.IO</span>
+        <span class="pill"><i class="fa-solid fa-plug" style="font-size:13px;color:#2ecc71"></i> REST APIs</span>
+        <span class="pill"><i class="fa-solid fa-arrows-left-right" style="font-size:13px;color:#2ecc71"></i> WebSockets</span>
+      </div>
+    </div>
 
-<div class="skill-card">
-<i class="fa-solid fa-paintbrush"></i>
-<h3>Design</h3>
-<p>Canva, Figma</p>
-</div>
+    <div class="skill-card reveal">
+      <i class="fa-solid fa-database"></i>
+      <h3>Databases</h3>
+      <div class="skill-pills">
+        <span class="pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+        <span class="pill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+        <span class="pill"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+      </div>
+    </div>
 
-</div>
+    <div class="skill-card reveal">
+      <i class="fa-solid fa-wrench"></i>
+      <h3>Tools & Platforms</h3>
+      <div class="skill-pills">
+        <span class="pill"><i class="devicon-git-plain colored"></i> Git</span>
+        <span class="pill"><i class="devicon-github-original colored pill-invert"></i> GitHub</span>
+        <span class="pill"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+        <span class="pill"><i class="devicon-vercel-plain colored pill-invert"></i> Vercel</span>
+        <span class="pill"><i class="devicon-render-plain colored"></i> Render</span>
+      </div>
+    </div>
 
+    <div class="skill-card reveal">
+      <i class="fa-solid fa-robot"></i>
+      <h3>AI & APIs</h3>
+      <div class="skill-pills">
+        <span class="pill"><i class="devicon-google-plain colored"></i> Gemini API</span>
+        <span class="pill"><i class="fa-brands fa-openai" style="font-size:13px;color:#74aa9c"></i> OpenAI API</span>
+        <span class="pill"><i class="fa-solid fa-map-location-dot" style="font-size:13px;color:#2ecc71"></i> Nominatim</span>
+        <span class="pill"><i class="fa-brands fa-google" style="font-size:13px;color:#4285F4"></i> OAuth 2.0</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 
 <!-- PROJECTS -->
 <section id="projects" class="projects">
+  <h2 class="reveal">Projects</h2>
 
-<h2>Projects</h2>
-<small style="color:#2ecc71">(Click Live Demo to view project)</small>
+  <div class="projects-grid">
 
-<div class="projects-grid">
+    <!-- PROJECT 1 -->
+    <div class="project-card reveal">
+      <i class="fa-solid fa-hands-praying"></i>
+      <h3>Bhakti Tradition Map</h3>
+      <p class="project-desc">Full-stack WebGIS platform visualising 1,000+ years of Bhakti movement data with interactive maps, geocoding pipeline, and saint network graphs. Bachelor Thesis Project.</p>
+      <div class="project-tech">
+        <span class="pill">Node.js</span>
+        <span class="pill">MongoDB</span>
+        <span class="pill">Leaflet.js</span>
+        <span class="pill">Express</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://bhakti-tradition-map-vo8a.vercel.app/" target="_blank" class="project-btn live">Live Demo</a>
+        <a href="https://github.com/vibhuu22/bhakti-tradition-map" target="_blank" class="project-btn github">GitHub</a>
+      </div>
+    </div>
 
-<!-- PROJECT 1 -->
-<div class="project-card">
+    <!-- PROJECT 2 -->
+    <div class="project-card reveal">
+      <i class="fa-brands fa-rocketchat"></i>
+      <h3>Real Time Chat App</h3>
+      <p class="project-desc">Messaging platform with WebSocket communication, JWT auth, OAuth 2.0 (Google/GitHub), and PostgreSQL persistence — achieving sub-100ms latency.</p>
+      <div class="project-tech">
+        <span class="pill">Socket.IO</span>
+        <span class="pill">React</span>
+        <span class="pill">PostgreSQL</span>
+        <span class="pill">JWT</span>
+      </div>
+      <div class="project-buttons">
+        <span class="project-btn coming-soon"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+        <a href="https://github.com/vibhuu22" target="_blank" class="project-btn github">GitHub</a>
+      </div>
+    </div>
 
-<i class="fa-solid fa-hands-praying"></i>
+    <!-- PROJECT 3 -->
+    <div class="project-card reveal">
+      <i class="fa-solid fa-link"></i>
+      <h3>URL Shortener</h3>
+      <p class="project-desc">Full-stack app with custom short links, advanced click analytics, QR code generation, and a user dashboard — reducing manual tracking effort by ~40%.</p>
+      <div class="project-tech">
+        <span class="pill">React</span>
+        <span class="pill">Supabase</span>
+        <span class="pill">Tailwind CSS</span>
+      </div>
+      <div class="project-buttons">
+        <span class="project-btn coming-soon"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+        <a href="https://github.com/vibhuu22" target="_blank" class="project-btn github">GitHub</a>
+      </div>
+    </div>
 
-<h3>Bhakti Tradition Map (Thesis)</h3>
+    <!-- PROJECT 4 -->
+    <div class="project-card reveal">
+      <i class="fa-brands fa-chrome"></i>
+      <h3>Kiyo.AI Chrome Extension</h3>
+      <p class="project-desc">Context-aware AI coding assistant with persistent chat history linked to every coding problem — built for the AlgoZenith Hackathon using Gemini API.</p>
+      <div class="project-tech">
+        <span class="pill">JavaScript</span>
+        <span class="pill">Gemini API</span>
+        <span class="pill">Chrome API</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://www.youtube.com/watch?v=fJL-K2Cgpm0&t=141s" class="project-btn live" target="_blank">Demo</a>
+        <a href="https://github.com/vibhuu22/Kiyo.AI" class="project-btn github" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-<p>Leaflet.js, MongoDB, GeoCoding, Digital Humanities</p>
-
-<div class="project-buttons">
-
-<a href="https://bhakti-tradition-map-vo8a.vercel.app/" target="_blank" class="project-btn live">
-Live Demo
-</a>
-
-<a href="https://github.com/vibhuu22/bhakti-tradition-map" target="_blank" class="project-btn github">
-GitHub
-</a>
-
-</div>
-
-</div>
-
-
-<!-- PROJECT 2 -->
-<div class="project-card">
-
-<i class="fa-brands fa-rocketchat"></i>
-
-<h3>Real Time Chat Application</h3>
-
-<p>WebSockets, React, PostgreSQL</p>
-
-<div class="project-buttons">
-
-<a href="#" class="project-btn live" target="_blank">Live Demo</a>
-
-<a href="#" class="project-btn github" target="_blank">GitHub</a>
-
-</div>
-
-</div>
-
-
-<!-- PROJECT 3 -->
-<div class="project-card">
-
-<i class="fa-solid fa-link"></i>
-
-<h3>URL Shortener</h3>
-
-<p>React, Supabase, Tailwind</p>
-
-<div class="project-buttons">
-
-<a href="#" class="project-btn live" target="_blank">Live Demo</a>
-
-<a href="#" class="project-btn github" target="_blank">GitHub</a>
-
-</div>
-
-</div>
-
-
-<!-- PROJECT 4 -->
-<div class="project-card">
-
-<i class="fa-brands fa-openai"></i>
-
-<h3>Kiyo.AI ChatBot</h3>
-
-<p>HTML, JavaScript, Gemini API</p>
-
-<div class="project-buttons">
-
-<a href="https://www.youtube.com/watch?v=fJL-K2Cgpm0&t=141s" class="project-btn live" target="_blank">Demo</a>
-
-<a href="https://github.com/vibhuu22/Kiyo.AI" class="project-btn github" target="_blank">GitHub</a>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
-
 
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
+  <h2 class="reveal">Contact Me</h2>
 
-<h2>Contact Me</h2>
+  <div class="contact-section reveal">
+    <form action="https://api.web3forms.com/submit" method="POST">
 
-<div class="contact-section">
+      <input type="hidden" name="access_key" value="7f074eb7-3f6e-430e-a20f-dcd816dfa564">
 
-<form action="https://api.web3forms.com/submit" method="POST">
+      <h3>Name*</h3>
+      <input type="text" name="UserName" placeholder="Your Name" class="contact-input" required>
+      <small class="error-message"></small>
 
-<input type="hidden" name="access_key" value="7f074eb7-3f6e-430e-a20f-dcd816dfa564">
+      <h3>Email*</h3>
+      <input id="email" type="email" name="UserEmail" placeholder="Your Email" class="contact-input" required>
+      <small class="error-message"></small>
 
-<h3>Name*</h3>
-<input type="text" name="UserName" placeholder="Your Name" class="contact-input" required>
-<small class="error-message"></small>
+      <h3>Contact No.</h3>
+      <input type="tel" name="UserContact" placeholder="Your Contact No." class="contact-input" pattern="[0-9]{10}" maxlength="10">
+      <small class="error-message"></small>
 
-<h3>Email*</h3>
-<input id="email" type="email" name="UserEmail" placeholder="Your Email" class="contact-input" required>
-<small class="error-message"></small>
+      <h3>Message*</h3>
+      <textarea name="message" id="message" class="contact-input" placeholder="Type your message" required></textarea>
+      <small class="error-message"></small>
 
-<h3>Contact No.</h3>
-<input type="tel" name="UserContact" placeholder="Your Contact No." class="contact-input" pattern="[0-9]{10}" maxlength="10">
+      <button type="submit" class="cta-button">Send Message</button>
 
-<small class="error-message"></small>
-
-<h3>Message*</h3>
-
-<textarea name="message" id="message" class="contact-input" placeholder="Type your message" required></textarea>
-
-<small class="error-message"></small>
-
-<button type="submit" class="cta-button">Send</button>
-
-</form>
-
-</div>
-
+    </form>
+  </div>
 </section>
-
 
 
 <!-- FOOTER -->
 <footer>
+  <p>© 2026 Vibhanshu Chaturvedi · IIT Kharagpur</p>
 
-<p>© 2026 Vibhanshu Chaturvedi</p>
-
-<div class="social-links">
-
-<a href="https://github.com/vibhuu22" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-<a href="https://www.linkedin.com/in/vibhanshu-chaturvedi-b8a963209/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-
-<a href="https://www.instagram.com/vibhuu.22/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
-<a href="https://wa.me/+917388535376" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-
-</div>
-
+  <div class="social-links">
+    <a href="https://github.com/vibhuu22" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/vibhanshu-chaturvedi-b8a963209/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/vibhuu.22/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://wa.me/+917388535376" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
 </footer>
 
 
@@ -239,23 +359,19 @@ GitHub
 <script type="module" src="index.js"></script>
 
 <script>
-
 document.addEventListener("DOMContentLoaded", function () {
-
-new Typed("#typed",{
-strings:[
-"Food Engineer @ IIT Kharagpur 2027",
-"Full Stack Engineer by heart",
-"Driven by curiosity, guided by code"
-],
-typeSpeed:50,
-backSpeed:30,
-backDelay:1500,
-loop:true
+  new Typed("#typed", {
+    strings: [
+      "Food Engineer @ IIT Kharagpur 2027",
+      "Full Stack Engineer by heart",
+      "Driven by curiosity, guided by code"
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+  });
 });
-
-});
-
 </script>
 
 </body>
