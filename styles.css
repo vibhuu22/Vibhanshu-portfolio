@@ -915,3 +915,231 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* =========================================
+     EXPERIENCE SECTION
+     ========================================= */
+  .exp-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .exp-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .exp-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0;
+  }
+
+  .exp-date {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+    white-space: nowrap;
+  }
+
+  .exp-role {
+    font-size: 0.88rem;
+    color: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  .exp-list {
+    list-style: none;
+    margin: 0 0 1.2rem;
+    padding: 0;
+  }
+
+  .exp-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .exp-list li::before {
+    content: '\25B9';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  .exp-list li strong,
+  .exp-card .project-desc strong {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+  }
+
+
+  /* =========================================
+     FEATURED PROJECT (deep dive)
+     ========================================= */
+  .featured-wrap {
+    max-width: 1000px;
+    margin: 0 auto 3.5rem;
+  }
+
+  .featured-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.7rem;
+  }
+
+  .featured-card {
+    padding: 2.25rem;
+  }
+
+  .featured-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .featured-sub {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+  }
+
+  .featured-body {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .featured-body p {
+    font-size: 0.85rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1rem;
+  }
+
+  .featured-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  .featured-body strong {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+  }
+
+  .featured-body em {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  .featured-body code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.78rem;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: var(--accent);
+  }
+
+  .featured-h {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .featured-col > .featured-h:first-child {
+    margin-top: 0;
+  }
+
+  .featured-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .featured-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.65rem;
+    font-size: 0.82rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .featured-list li::before {
+    content: '\25B9';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  .spec-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .spec-item {
+    border: 1px solid rgba(46, 204, 113, 0.25);
+    background: rgba(46, 204, 113, 0.04);
+    border-radius: 10px;
+    padding: 0.8rem 0.9rem;
+  }
+
+  .spec-num {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1.2;
+  }
+
+  .spec-label {
+    display: block;
+    font-size: 0.68rem;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.4;
+    margin-top: 0.2rem;
+  }
+
+  .featured-card .project-tech {
+    margin-top: 1.8rem;
+  }
+
+
+  /* =========================================
+     RESPONSIVE — EXPERIENCE & FEATURED
+     ========================================= */
+  @media (max-width: 900px) {
+    .featured-body {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .exp-date {
+      white-space: normal;
+    }
+
+    .featured-card,
+    .exp-card {
+      padding: 1.5rem;
+    }
+
+    .featured-card h3 {
+      font-size: 1.25rem;
+    }
+  }
