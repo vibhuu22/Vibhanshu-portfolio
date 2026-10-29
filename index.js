@@ -1,5 +1,4 @@
-// Fixed import path (was ./functionalities/form/error.js — wrong folder name)
-import { showError, showSuccess, validateEmail }
+import { validateEmail }
   from "./functionalities/ContactFormErrorHandling/error.js";
 
 
@@ -17,10 +16,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* ------------------------------------------
+     THEME TOGGLE
+  ------------------------------------------ */
+  const themeToggle = document.getElementById("themeToggle");
+  const root = document.documentElement;
+
+  const isDark = () =>
+    root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const syncThemeIcon = () => {
+    themeToggle.innerHTML = isDark()
+      ? '<i class="fa-solid fa-sun"></i>'
+      : '<i class="fa-solid fa-moon"></i>';
+  };
+
+  if (themeToggle) {
+    syncThemeIcon();
+    themeToggle.addEventListener("click", () => {
+      root.dataset.theme = isDark() ? "light" : "dark";
+      try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+      syncThemeIcon();
+    });
+  }
+
+
+  /* ------------------------------------------
      HAMBURGER MENU
   ------------------------------------------ */
   const hamburger = document.getElementById("hamburger");
   const mobileNav = document.getElementById("mobileNav");
+
+  const closeMobileNav = () => {
+    hamburger.classList.remove("open");
+    mobileNav.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+  };
 
   if (hamburger && mobileNav) {
     hamburger.addEventListener("click", () => {
@@ -29,24 +61,46 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.toggle("no-scroll");
     });
 
-    // Close mobile nav when any link is clicked
     document.querySelectorAll(".mobile-link").forEach(link => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("open");
-        mobileNav.classList.remove("open");
-        document.body.classList.remove("no-scroll");
-      });
+      link.addEventListener("click", closeMobileNav);
     });
 
-    // Close mobile nav on Escape key
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && mobileNav.classList.contains("open")) {
-        hamburger.classList.remove("open");
-        mobileNav.classList.remove("open");
-        document.body.classList.remove("no-scroll");
-      }
+      if (e.key === "Escape" && mobileNav.classList.contains("open")) closeMobileNav();
     });
   }
+
+
+  /* ------------------------------------------
+     NAVBAR BORDER ON SCROLL
+  ------------------------------------------ */
+  const navbar = document.querySelector(".navbar");
+  const onScroll = () => navbar.classList.toggle("scrolled", window.scrollY > 8);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+
+  /* ------------------------------------------
+     TIMELINE FILTERS
+  ------------------------------------------ */
+  const chips = document.querySelectorAll(".chip");
+  const items = document.querySelectorAll(".tl-item");
+
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      const filter = chip.dataset.filter;
+
+      chips.forEach(c => c.classList.toggle("active", c === chip));
+
+      items.forEach(item => {
+        const tracks = item.dataset.track.split(" ");
+        const show = filter === "all" || tracks.includes(filter);
+        item.classList.toggle("hidden", !show);
+        // Filtered-in items may not have scrolled into view yet
+        if (show) item.classList.add("revealed");
+      });
+    });
+  });
 
 
   /* ------------------------------------------
@@ -56,13 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry, i) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Stagger siblings slightly for a cascade effect
           const siblings = Array.from(
             entry.target.parentElement.querySelectorAll(".reveal:not(.revealed)")
           );
-          const delay = siblings.indexOf(entry.target) * 80;
+          const delay = Math.min(siblings.indexOf(entry.target), 4) * 70;
 
           setTimeout(() => {
             entry.target.classList.add("revealed");
@@ -72,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
   );
 
   revealElements.forEach(el => observer.observe(el));
