@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vibhanshu Chaturvedi · Product &amp; Operations · IIT Kharagpur</title>
-<meta name="description" content="Vibhanshu Chaturvedi — product, operations and analytics. Founder of AnnaData, ex-Founder's Office at Skillbee, consultant at Jatia Steel. IIT Kharagpur '27.">
+<meta name="description" content="Vibhanshu Chaturvedi: product, operations and analytics. Founder of AnnaData, ex-Founder's Office at Skillbee, consultant at Jatia Steel. IIT Kharagpur '27.">
 
 <script>
   // Apply saved theme before paint to avoid a flash
@@ -23,730 +23,815 @@
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar">
-  <a href="#home" class="logo">Vibhanshu<span>.</span></a>
+<a href="#content" class="skip-link">Skip to content</a>
+<div class="spotlight" aria-hidden="true"></div>
 
-  <ul class="nav-links">
-    <li><a href="#work">Work</a></li>
-    <li><a href="#timeline">Timeline</a></li>
-    <li><a href="#toolkit">Toolkit</a></li>
-    <li><a href="#engineering">Engineering</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
-  <div class="nav-actions">
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-      <i class="fa-solid fa-moon"></i>
-    </button>
-    <a href="assets/CV.pdf" download class="nav-cv">CV <i class="fa-solid fa-arrow-down"></i></a>
+<!-- Mobile top bar -->
+<div class="topbar">
+  <a href="#top" class="logo">Vibhanshu<span>.</span></a>
+  <div class="topbar-actions">
+    <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
   </div>
-</nav>
+</div>
 
 <!-- Mobile Nav Overlay -->
 <div class="mobile-nav" id="mobileNav">
   <ul>
+    <li><a href="#about"       class="mobile-link">About</a></li>
+    <li><a href="#now"         class="mobile-link">Now</a></li>
     <li><a href="#work"        class="mobile-link">Work</a></li>
-    <li><a href="#timeline"    class="mobile-link">Timeline</a></li>
-    <li><a href="#toolkit"     class="mobile-link">Toolkit</a></li>
+    <li><a href="#experience"  class="mobile-link">Experience</a></li>
+    <li><a href="#principles"  class="mobile-link">How I work</a></li>
     <li><a href="#engineering" class="mobile-link">Engineering</a></li>
     <li><a href="#contact"     class="mobile-link">Contact</a></li>
   </ul>
 </div>
 
 
-<main>
+<div class="layout" id="top">
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-text">
-    <p class="eyebrow reveal"><span class="status-dot"></span> Product · Operations · Analytics — IIT Kharagpur '27</p>
+  <!-- LEFT RAIL (sticky on desktop) -->
+  <header class="rail">
+    <div class="rail-top">
+      <img src="profile.png" class="rail-photo reveal" alt="Vibhanshu Chaturvedi">
 
-    <h1 class="reveal">
-      I take messy, real-world problems and turn them into <em>systems that ship.</em>
-    </h1>
+      <h1 class="reveal">Vibhanshu Chaturvedi</h1>
+      <p class="rail-role reveal">Product · Operations · Analytics</p>
+      <p class="rail-tagline reveal">I take messy, real-world problems and turn them into <em>systems that ship.</em></p>
 
-    <p class="hero-desc reveal">
-      I'm <strong>Vibhanshu Chaturvedi</strong>. I'm building <strong>AnnaData</strong>, an SMS-first crop advisor for farmers on feature phones,
-      and consulting on reporting and digitisation at <strong>Jatia Steel</strong>. Before that I ran a cross-border hiring program end-to-end in
-      <strong>Skillbee's Founder's Office</strong>. I started out writing software, and I still build the tools I need.
-    </p>
+      <p class="status reveal"><span class="status-dot"></span> Open to full-time roles from 2027</p>
 
-    <div class="hero-ctas reveal">
-      <a href="#work" class="btn btn-primary">See selected work</a>
-      <a href="#timeline" class="btn btn-ghost">View timeline <i class="fa-solid fa-arrow-down"></i></a>
+      <nav class="rail-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#about"><span class="nav-line"></span><span class="nav-text">About</span></a></li>
+          <li><a href="#now"><span class="nav-line"></span><span class="nav-text">Now</span></a></li>
+          <li><a href="#work"><span class="nav-line"></span><span class="nav-text">Selected work</span></a></li>
+          <li><a href="#experience"><span class="nav-line"></span><span class="nav-text">Experience</span></a></li>
+          <li><a href="#principles"><span class="nav-line"></span><span class="nav-text">How I work</span></a></li>
+          <li><a href="#engineering"><span class="nav-line"></span><span class="nav-text">Engineering</span></a></li>
+          <li><a href="#contact"><span class="nav-line"></span><span class="nav-text">Contact</span></a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
 
-  <div class="hero-photo reveal">
-    <img src="profile.png" alt="Vibhanshu Chaturvedi">
-  </div>
-</section>
-
-
-<!-- PROOF STRIP -->
-<section class="proof" aria-label="Highlights">
-  <div class="proof-item reveal">
-    <span class="proof-num">1.3% <i class="fa-solid fa-arrow-right"></i> 1.8%</span>
-    <span class="proof-label">Lead-to-enrolment conversion at Skillbee, on near-double lead volume</span>
-  </div>
-  <div class="proof-item reveal">
-    <span class="proof-num">4 days <i class="fa-solid fa-arrow-right"></i> mins</span>
-    <span class="proof-label">Monthly vendor reporting at Jatia Steel, across 100+ vendors</span>
-  </div>
-  <div class="proof-item reveal">
-    <span class="proof-num">125+</span>
-    <span class="proof-label">Farmers interviewed before writing a line of AnnaData</span>
-  </div>
-  <div class="proof-item reveal">
-    <span class="proof-num">Gold</span>
-    <span class="proof-label">General Championship Product Management, IIT KGP</span>
-  </div>
-</section>
-
-
-<!-- SELECTED WORK -->
-<section id="work" class="section">
-  <div class="section-head reveal">
-    <p class="kicker">01 — Selected work</p>
-    <h2>Three problems, and what I decided</h2>
-    <p class="section-sub">Each one is laid out as problem, decision, result.</p>
-  </div>
-
-  <div class="cases">
-
-    <article class="case reveal">
-      <div class="case-meta">
-        <span class="tag tag-product">0 → 1 Product</span>
-        <span class="case-date">Aug 2026 – Present</span>
+    <div class="rail-bottom reveal">
+      <div class="rail-actions">
+        <a href="assets/CV.pdf" download class="btn btn-primary btn-sm">Download CV <i class="fa-solid fa-arrow-down"></i></a>
+        <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
       </div>
-      <h3>AnnaData</h3>
-      <p class="case-lede">An SMS-first advisory agent for the feature phone a farmer already carries.</p>
-
-      <dl class="case-body">
-        <div>
-          <dt>Problem</dt>
-          <dd>In 125+ farmer interviews, <strong>80%</strong> had a smartphone in the house, but <strong>0%</strong> used it for farming. The phone belonged to someone else, and the apps assumed a literacy the farmer didn't have.</dd>
-        </div>
-        <div>
-          <dt>Decision</dt>
-          <dd>Ship on SMS instead of an app. Ground every pesticide recommendation in <strong>2,456</strong> registered uses across 331 crops, parsed from 6 statutory CIB&amp;RC registers. Distribute through KVK agronomists, not ads.</dd>
-        </div>
-        <div>
-          <dt>Result</dt>
-          <dd>MVP live with <strong>100+ users</strong>, giving personalised crop-stage guidance in <strong>~16 s</strong>. 5+ agronomist partners open ICAR centres of ~4,300 farmers each as low-CAC channels.</dd>
-        </div>
-      </dl>
-    </article>
-
-    <article class="case reveal">
-      <div class="case-meta">
-        <span class="tag tag-ops">Ops &amp; GTM</span>
-        <span class="case-date">May – Jul 2026</span>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/vibhanshu-chaturvedi-b8a963209/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/vibhuu22" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/+917388535376" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/vibhuu.22/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
-      <h3>Skillbee · EuroPilot Africa</h3>
-      <p class="case-lede">Placing African heavy-trailer drivers with EU logistics operators in Lithuania and Germany.</p>
+    </div>
+  </header>
 
-      <dl class="case-body">
-        <div>
-          <dt>Problem</dt>
-          <dd>One person was both qualifying and selling to leads, so conversion was stuck at <strong>1.3%</strong>. Deployments took <strong>8 months</strong>, and the first market we tried turned out to be capped at 2–3 hires per company per month.</dd>
-        </div>
-        <div>
-          <dt>Decision</dt>
-          <dd>Dropped the Zimbabwe → Slovakia GTM once the quota surfaced. Split the CRM role into <em>qualify</em> and <em>sell</em>. Partnered with Easy Documents to run police-clearance paperwork in parallel.</dd>
-        </div>
-        <div>
-          <dt>Result</dt>
-          <dd>Conversion rose to <strong>1.8%</strong> on nearly double the lead volume, and South Africa → Lithuania time-to-deploy fell from <strong>8 to 6 months</strong>. I also ran the Southern Africa entry on a ZAR 500K+ budget.</dd>
-        </div>
-      </dl>
-    </article>
 
-    <article class="case reveal">
-      <div class="case-meta">
-        <span class="tag tag-product">Product strategy</span>
-        <span class="case-date">Feb – Mar 2026 · <i class="fa-solid fa-medal"></i> Gold</span>
+  <!-- RIGHT COLUMN -->
+  <main class="content" id="content">
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-label">About</h2>
+      <div class="prose reveal">
+        <p>
+          I'm a dual-degree student at <strong>IIT Kharagpur</strong> (B.Tech + M.Tech, Agricultural &amp; Food Engineering) who ended up doing
+          what I enjoy most: sitting between users, operations and data, and deciding what to build next.
+        </p>
+        <p>
+          Right now I'm building <strong>AnnaData</strong>, an SMS-first crop advisor for farmers on feature phones, and consulting on reporting and
+          digitisation at <strong>Jatia Steel</strong>. Before that I ran a cross-border hiring program end-to-end in
+          <strong>Skillbee's Founder's Office</strong>, from GTM to CRM to the European carrier clients.
+        </p>
+        <p>
+          I started out writing software. That path is <a href="#engineering">further down the page</a>, and it's why I still build the tools I need.
+        </p>
       </div>
-      <h3>InsurePlus</h3>
-      <p class="case-lede">A super-app that brings 3–5 disjoint household policies into a single plan.</p>
 
-      <dl class="case-body">
-        <div>
-          <dt>Problem</dt>
-          <dd><strong>60 Cr</strong> of 90 Cr Indian adults are uninsured. Across 3 personas and 5 incumbents, <strong>70%</strong> reported confusion at selection and only <strong>20%</strong> were satisfied at renewal.</dd>
+      <div class="metrics reveal">
+        <div class="metric">
+          <span class="metric-num">1.3% <i class="fa-solid fa-arrow-right"></i> 1.8%</span>
+          <span class="metric-label">Lead-to-enrolment conversion at Skillbee, on near-double lead volume</span>
         </div>
-        <div>
-          <dt>Decision</dt>
-          <dd>Mapped the 5-stage buying journey and scored 4 modules with RICE (36.4 → 9.2) against a 2,700 dev-hour budget. Telemedicine goes first because of its 10 Mn/yr reach, followed by gig cover, family vault and travel SOS.</dd>
+        <div class="metric">
+          <span class="metric-num">4 days <i class="fa-solid fa-arrow-right"></i> mins</span>
+          <span class="metric-label">Monthly vendor reporting at Jatia Steel, across 100+ vendors</span>
         </div>
-        <div>
-          <dt>Result</dt>
-          <dd>A 4-phase roadmap sized against a <strong>₹25,000 Cr</strong> premium opportunity, anchored on health insurance's 17.8% CAGR. It won Gold at the Inter-Hall General Championship.</dd>
+        <div class="metric">
+          <span class="metric-num">125+</span>
+          <span class="metric-label">Farmers interviewed before writing a line of AnnaData</span>
         </div>
-      </dl>
-    </article>
-
-  </div>
-</section>
-
-
-<!-- TIMELINE -->
-<section id="timeline" class="section">
-  <div class="section-head reveal">
-    <p class="kicker">02 — Timeline</p>
-    <h2>Experience, newest first</h2>
-    <p class="section-sub">Filter by track. The engineering track is where I started.</p>
-  </div>
-
-  <div class="filters reveal" role="group" aria-label="Filter timeline">
-    <button class="chip active" data-filter="all">All</button>
-    <button class="chip" data-filter="product">Product</button>
-    <button class="chip" data-filter="ops">Operations</button>
-    <button class="chip" data-filter="data">Data</button>
-    <button class="chip" data-filter="leadership">Leadership</button>
-    <button class="chip" data-filter="engineering">Engineering</button>
-  </div>
-
-  <ol class="timeline">
-
-    <!-- JATIA STEEL -->
-    <li class="tl-item reveal" data-track="ops data">
-      <div class="tl-date"><span>Sep 2026</span><span class="tl-now">Present</span></div>
-      <div class="tl-dot now"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-ops">Operations</span><span class="tag tag-data">Data</span></div>
-        <h3>Management &amp; Business Transformation Consultant</h3>
-        <p class="tl-org">Jatia Steel · Kolkata</p>
-        <p class="tl-lede">Running reporting, logistics-digitisation and AI-adoption workstreams across procurement, vendor management and plant operations.</p>
-        <ul class="tl-list">
-          <li>Built <strong>Power BI</strong> vendor dashboards on live SAP B1 (HANA), cutting a <strong>4-day</strong> manual monthly reporting cycle across 100+ vendors to minutes.</li>
-          <li>Ran AI-adoption workshops for <strong>50+ employees</strong> across functions, bringing AI into reporting and process design to shorten turnaround times.</li>
-          <li>Scoping a <strong>Fleet Management System</strong> to digitise inbound raw-material flows: gate-in/out, weighbridge, loading/unloading and GPS tracking.</li>
-        </ul>
-        <div class="pills"><span class="pill">Power BI</span><span class="pill">SAP B1 · HANA</span><span class="pill">SQL</span><span class="pill">Process design</span></div>
+        <div class="metric">
+          <span class="metric-num">8 <i class="fa-solid fa-arrow-right"></i> 6 mo</span>
+          <span class="metric-label">South Africa → Lithuania time-to-deploy</span>
+        </div>
       </div>
-    </li>
+    </section>
 
-    <!-- ANNADATA -->
-    <li class="tl-item reveal" data-track="product">
-      <div class="tl-date"><span>Aug 2026</span><span class="tl-now">Present</span></div>
-      <div class="tl-dot now"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-product">Product</span><span class="tag tag-neutral">Founder</span></div>
-        <h3>Founder &amp; CEO</h3>
-        <p class="tl-org">AnnaData AgriTech Solutions · UDYAM registered</p>
-        <p class="tl-lede">An SMS-first advisory agent built for the feature phone farmers already carry, not the household smartphone they never learned to use.</p>
-        <ul class="tl-list">
-          <li>Launched the MVP to <strong>100+ users</strong>, delivering personalised crop-lifecycle guidance (soil, weather, crop stage) over SMS in <strong>16 s</strong>.</li>
-          <li>Ran primary research with <strong>125+ farmers</strong> and found the adoption gap: 80% had smartphones, 0% used them for farming.</li>
-          <li>Grounded pesticide recommendations in <strong>2,456</strong> registered uses across 331 crops and 825 products, parsed from 6 statutory CIB&amp;RC registers.</li>
-          <li>Partnered with <strong>5+ agronomists</strong> for KVK access, opening ICAR centres of ~4,300 farmers each as trusted, low-CAC district channels.</li>
-        </ul>
-        <div class="pills"><span class="pill">User research</span><span class="pill">MVP</span><span class="pill">SMS agent</span><span class="pill">Distribution</span></div>
+
+    <!-- NOW -->
+    <section id="now" class="section">
+      <h2 class="section-label">Now</h2>
+      <p class="section-note reveal">What I'm focused on this season · Updated Oct 2026</p>
+      <ul class="now-list reveal">
+        <li>
+          <span class="now-key">Building</span>
+          <span><strong>AnnaData</strong>: growing the SMS advisory beyond its first 100+ users through KVK agronomist partners.</span>
+        </li>
+        <li>
+          <span class="now-key">Consulting</span>
+          <span><strong>Jatia Steel</strong>: scoping a Fleet Management System for gate-in/out, weighbridge and GPS tracking of inbound raw material.</span>
+        </li>
+        <li>
+          <span class="now-key">Studying</span>
+          <span>Final year of the M.Tech dual degree at <strong>IIT Kharagpur</strong>, graduating 2027.</span>
+        </li>
+        <li>
+          <span class="now-key">Looking for</span>
+          <span>Full-time <strong>PM, product analyst or founder's office</strong> roles from 2027. <a href="#contact">Say hello</a>.</span>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- SELECTED WORK -->
+    <section id="work" class="section">
+      <h2 class="section-label">Selected work</h2>
+      <p class="section-note reveal">Three problems, each laid out as problem, decision, result.</p>
+      <div class="cases">
+
+        <article class="case reveal">
+          <div class="case-meta">
+            <span class="tag tag-product">0 → 1 Product</span>
+            <span class="case-date">Aug 2026 – Present</span>
+          </div>
+          <h3>AnnaData</h3>
+          <p class="case-lede">An SMS-first advisory agent for the feature phone a farmer already carries.</p>
+
+          <dl class="case-body">
+            <div>
+              <dt>Problem</dt>
+              <dd>In 125+ farmer interviews, <strong>80%</strong> had a smartphone in the house, but <strong>0%</strong> used it for farming. The phone belonged to someone else, and the apps assumed a literacy the farmer didn't have.</dd>
+            </div>
+            <div>
+              <dt>Decision</dt>
+              <dd>Ship on SMS instead of an app. Ground every pesticide recommendation in <strong>2,456</strong> registered uses across 331 crops, parsed from 6 statutory CIB&amp;RC registers. Distribute through KVK agronomists, not ads.</dd>
+            </div>
+            <div>
+              <dt>Result</dt>
+              <dd>MVP live with <strong>100+ users</strong>, giving personalised crop-stage guidance in <strong>~16 s</strong>. 5+ agronomist partners open ICAR centres of ~4,300 farmers each as low-CAC channels.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="case reveal">
+          <div class="case-meta">
+            <span class="tag tag-ops">Ops &amp; GTM</span>
+            <span class="case-date">May – Jul 2026</span>
+          </div>
+          <h3>Skillbee · EuroPilot Africa</h3>
+          <p class="case-lede">Placing African heavy-trailer drivers with EU logistics operators in Lithuania and Germany.</p>
+
+          <dl class="case-body">
+            <div>
+              <dt>Problem</dt>
+              <dd>One person was both qualifying and selling to leads, so conversion was stuck at <strong>1.3%</strong>. Deployments took <strong>8 months</strong>, and the first market we tried turned out to be capped at 2–3 hires per company per month.</dd>
+            </div>
+            <div>
+              <dt>Decision</dt>
+              <dd>Dropped the Zimbabwe → Slovakia GTM once the quota surfaced. Split the CRM role into <em>qualify</em> and <em>sell</em>. Partnered with Easy Documents to run police-clearance paperwork in parallel.</dd>
+            </div>
+            <div>
+              <dt>Result</dt>
+              <dd>Conversion rose to <strong>1.8%</strong> on nearly double the lead volume, and South Africa → Lithuania time-to-deploy fell from <strong>8 to 6 months</strong>. I also ran the Southern Africa entry on a ZAR 500K+ budget.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="case reveal">
+          <div class="case-meta">
+            <span class="tag tag-product">Product strategy</span>
+            <span class="case-date">Feb – Mar 2026 · <i class="fa-solid fa-medal"></i> Gold</span>
+          </div>
+          <h3>InsurePlus</h3>
+          <p class="case-lede">A super-app that brings 3–5 disjoint household policies into a single plan.</p>
+
+          <dl class="case-body">
+            <div>
+              <dt>Problem</dt>
+              <dd><strong>60 Cr</strong> of 90 Cr Indian adults are uninsured. Across 3 personas and 5 incumbents, <strong>70%</strong> reported confusion at selection and only <strong>20%</strong> were satisfied at renewal.</dd>
+            </div>
+            <div>
+              <dt>Decision</dt>
+              <dd>Mapped the 5-stage buying journey and scored 4 modules with RICE (36.4 → 9.2) against a 2,700 dev-hour budget. Telemedicine goes first because of its 10 Mn/yr reach, followed by gig cover, family vault and travel SOS.</dd>
+            </div>
+            <div>
+              <dt>Result</dt>
+              <dd>A 4-phase roadmap sized against a <strong>₹25,000 Cr</strong> premium opportunity, anchored on health insurance's 17.8% CAGR. It won Gold at the Inter-Hall General Championship.</dd>
+            </div>
+          </dl>
+        </article>
+
       </div>
-    </li>
+    </section>
 
-    <!-- SKILLBEE -->
-    <li class="tl-item reveal" data-track="ops product data">
-      <div class="tl-date"><span>May – Jul 2026</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-ops">Operations</span><span class="tag tag-product">GTM</span></div>
-        <h3>Founder's Office · Project Manager</h3>
-        <p class="tl-org">Skillbee India Pvt. Ltd. · Delhi</p>
-        <p class="tl-lede">End-to-end owner of EuroPilot Africa, placing African heavy-trailer drivers with EU logistics operators in Lithuania and Germany. Sole intern on the vertical, reporting directly to the Director of Logistics.</p>
-        <ul class="tl-list">
-          <li>Built the Zimbabwe → Slovakia <strong>GTM</strong> from scratch, then dropped it after finding per-company overseas hiring quotas capped at 2–3 a month.</li>
-          <li>Ran the Southern Africa market entry: regulatory setup, team scaling and 5+ partners, on a <strong>ZAR 500K+</strong> launch budget.</li>
-          <li>Split a combined CRM-recruiter role into qualify and sell, lifting lead-to-enrolment conversion from <strong>1.3% to 1.8%</strong> on nearly double the lead volume.</li>
-          <li>Partnered with Easy Documents on police-clearance paperwork, cutting South Africa → Lithuania time-to-deploy from <strong>8 to 6 months</strong>.</li>
-        </ul>
-        <details class="tl-more">
-          <summary>More from this role</summary>
-          <ul class="tl-list">
-            <li>Owned Zoho CRM for a <strong>23,158-record</strong> candidate base, building Blueprints and Deluge automations for follow-up scheduling and stage routing.</li>
-            <li>Built a <strong>Python/pandas</strong> call-log analytics pipeline that produced 8-sheet Excel scorecards benchmarking recruiter productivity every week.</li>
-            <li>Ran paid acquisition on <strong>Google &amp; Meta Ads</strong>, mapped recruitment corridors across <strong>15 EU markets</strong> and screened 50+ carriers for partnership.</li>
-            <li>Worked directly with European carrier clients and supported South African entity setup, banking and labour compliance.</li>
-            <li>Developed an NSDC-aligned driver training curriculum, including a Python/SVG generator that produced 23 standardised manoeuvre diagrams.</li>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="section-label">Experience</h2>
+      <p class="section-note reveal">Newest first. Filter by track; the engineering track is where I started.</p>
+      <div class="filters reveal" role="group" aria-label="Filter timeline">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="product">Product</button>
+        <button class="chip" data-filter="ops">Operations</button>
+        <button class="chip" data-filter="data">Data</button>
+        <button class="chip" data-filter="leadership">Leadership</button>
+        <button class="chip" data-filter="engineering">Engineering</button>
+      </div>
+
+      <ol class="timeline">
+
+        <!-- JATIA STEEL -->
+        <li class="tl-item reveal" data-track="ops data">
+          <div class="tl-date"><span>Sep 2026</span><span class="tl-now">Present</span></div>
+          <div class="tl-dot now"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-ops">Operations</span><span class="tag tag-data">Data</span></div>
+            <h3>Management &amp; Business Transformation Consultant</h3>
+            <p class="tl-org">Jatia Steel · Kolkata</p>
+            <p class="tl-lede">Running reporting, logistics-digitisation and AI-adoption workstreams across procurement, vendor management and plant operations.</p>
+            <ul class="tl-list">
+              <li>Built <strong>Power BI</strong> vendor dashboards on live SAP B1 (HANA), cutting a <strong>4-day</strong> manual monthly reporting cycle across 100+ vendors to minutes.</li>
+              <li>Ran AI-adoption workshops for <strong>50+ employees</strong> across functions, bringing AI into reporting and process design to shorten turnaround times.</li>
+              <li>Scoping a <strong>Fleet Management System</strong> to digitise inbound raw-material flows: gate-in/out, weighbridge, loading/unloading and GPS tracking.</li>
+            </ul>
+            <div class="pills"><span class="pill">Power BI</span><span class="pill">SAP B1 · HANA</span><span class="pill">SQL</span><span class="pill">Process design</span></div>
+          </div>
+        </li>
+
+        <!-- ANNADATA -->
+        <li class="tl-item reveal" data-track="product">
+          <div class="tl-date"><span>Aug 2026</span><span class="tl-now">Present</span></div>
+          <div class="tl-dot now"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-product">Product</span><span class="tag tag-neutral">Founder</span></div>
+            <h3>Founder &amp; CEO</h3>
+            <p class="tl-org">AnnaData AgriTech Solutions · UDYAM registered</p>
+            <p class="tl-lede">An SMS-first advisory agent built for the feature phone farmers already carry, not the household smartphone they never learned to use.</p>
+            <ul class="tl-list">
+              <li>Launched the MVP to <strong>100+ users</strong>, delivering personalised crop-lifecycle guidance (soil, weather, crop stage) over SMS in <strong>16 s</strong>.</li>
+              <li>Ran primary research with <strong>125+ farmers</strong> and found the adoption gap: 80% had smartphones, 0% used them for farming.</li>
+              <li>Grounded pesticide recommendations in <strong>2,456</strong> registered uses across 331 crops and 825 products, parsed from 6 statutory CIB&amp;RC registers.</li>
+              <li>Partnered with <strong>5+ agronomists</strong> for KVK access, opening ICAR centres of ~4,300 farmers each as trusted, low-CAC district channels.</li>
+            </ul>
+            <div class="pills"><span class="pill">User research</span><span class="pill">MVP</span><span class="pill">SMS agent</span><span class="pill">Distribution</span></div>
+          </div>
+        </li>
+
+        <!-- SKILLBEE -->
+        <li class="tl-item reveal" data-track="ops product data">
+          <div class="tl-date"><span>May – Jul 2026</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-ops">Operations</span><span class="tag tag-product">GTM</span></div>
+            <h3>Founder's Office · Project Manager</h3>
+            <p class="tl-org">Skillbee India Pvt. Ltd. · Delhi</p>
+            <p class="tl-lede">End-to-end owner of EuroPilot Africa, placing African heavy-trailer drivers with EU logistics operators in Lithuania and Germany. Sole intern on the vertical, reporting directly to the Director of Logistics.</p>
+            <ul class="tl-list">
+              <li>Built the Zimbabwe → Slovakia <strong>GTM</strong> from scratch, then dropped it after finding per-company overseas hiring quotas capped at 2–3 a month.</li>
+              <li>Ran the Southern Africa market entry: regulatory setup, team scaling and 5+ partners, on a <strong>ZAR 500K+</strong> launch budget.</li>
+              <li>Split a combined CRM-recruiter role into qualify and sell, lifting lead-to-enrolment conversion from <strong>1.3% to 1.8%</strong> on nearly double the lead volume.</li>
+              <li>Partnered with Easy Documents on police-clearance paperwork, cutting South Africa → Lithuania time-to-deploy from <strong>8 to 6 months</strong>.</li>
+            </ul>
+            <details class="tl-more">
+              <summary>More from this role</summary>
+              <ul class="tl-list">
+                <li>Owned Zoho CRM for a <strong>23,158-record</strong> candidate base, building Blueprints and Deluge automations for follow-up scheduling and stage routing.</li>
+                <li>Built a <strong>Python/pandas</strong> call-log analytics pipeline that produced 8-sheet Excel scorecards benchmarking recruiter productivity every week.</li>
+                <li>Ran paid acquisition on <strong>Google &amp; Meta Ads</strong>, mapped recruitment corridors across <strong>15 EU markets</strong> and screened 50+ carriers for partnership.</li>
+                <li>Worked directly with European carrier clients and supported South African entity setup, banking and labour compliance.</li>
+                <li>Developed an NSDC-aligned driver training curriculum, including a Python/SVG generator that produced 23 standardised manoeuvre diagrams.</li>
+              </ul>
+            </details>
+            <div class="pills"><span class="pill">Zoho CRM</span><span class="pill">Deluge</span><span class="pill">Python</span><span class="pill">pandas</span><span class="pill">Google &amp; Meta Ads</span></div>
+          </div>
+        </li>
+
+        <!-- GC DATA ANALYTICS -->
+        <li class="tl-item reveal" data-track="data">
+          <div class="tl-date"><span>Mar – Apr 2026</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-data">Data</span><span class="tag tag-award"><i class="fa-solid fa-medal"></i> Bronze</span></div>
+            <h3>General Championship · Data Analytics</h3>
+            <p class="tl-org">IIT Kharagpur · Patel Hall, against 20+ halls</p>
+            <p class="tl-lede">Optimised marketing ROI for ElectroMart, an Ontario e-retailer, using predictive modelling and budget allocation across 9 channels.</p>
+            <ul class="tl-list">
+              <li>Ran KPI-driven EDA to surface the main revenue levers, discount elasticity and retention patterns.</li>
+              <li>Engineered RFM, loyalty, lifecycle and sale-week features on <strong>1.65M orders</strong> and benchmarked 6 models, including XGBoost, CatBoost and a DNN.</li>
+              <li>Optimised budget across <strong>9 marketing channels</strong> with ROI estimators and dynamic allocation.</li>
+            </ul>
+            <div class="pills"><span class="pill">Python</span><span class="pill">XGBoost</span><span class="pill">RFM</span><span class="pill">Marketing mix</span></div>
+          </div>
+        </li>
+
+        <!-- GC PRODUCT MANAGEMENT -->
+        <li class="tl-item reveal" data-track="product">
+          <div class="tl-date"><span>Feb – Mar 2026</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-product">Product</span><span class="tag tag-award"><i class="fa-solid fa-medal"></i> Gold</span></div>
+            <h3>General Championship · Product Management</h3>
+            <p class="tl-org">IIT Kharagpur</p>
+            <p class="tl-lede">Designed InsurePlus, a super-app bringing 3–5 disjoint household policies into a single plan: telemedicine, gig cover, family vault and travel SOS.</p>
+            <ul class="tl-list">
+              <li>Quantified a <strong>₹25,000 Cr</strong> premium opportunity across 60 Cr uninsured adults in a 90 Cr base, anchored on health insurance's 17.8% CAGR.</li>
+              <li>Mapped a 5-stage buying journey across 3 personas and 5 incumbents, isolating <strong>70%</strong> confusion at selection and <strong>20%</strong> satisfaction at renewal.</li>
+              <li>Prioritised 4 modules with <strong>RICE</strong> (36.4 → 9.2) within a 2,700 dev-hour budget, sequencing telemedicine first for its 10 Mn/yr reach, across 4 phases.</li>
+            </ul>
+            <div class="pills"><span class="pill">Market sizing</span><span class="pill">Journey mapping</span><span class="pill">RICE</span><span class="pill">Roadmapping</span></div>
+          </div>
+        </li>
+
+        <!-- EY TECHATHON -->
+        <li class="tl-item reveal" data-track="data engineering">
+          <div class="tl-date"><span>Feb – Mar 2026</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-data">Data</span><span class="tag tag-eng">Engineering</span><span class="tag tag-award">Semifinalist</span></div>
+            <h3>EY Techathon 6.0 · AfterCare AI</h3>
+            <p class="tl-org">Vehicle predictive-maintenance platform for commercial fleets</p>
+            <p class="tl-lede">A master agentic layer over live telemetry that predicts subsystem failures and routes the follow-up work.</p>
+            <ul class="tl-list">
+              <li>Trained per-subsystem LSTMs on <strong>8 telemetry channels</strong> (288-step sequences, log-RUL outputs) to predict DPF and SCR failures <strong>15–20 days</strong> early.</li>
+              <li>Layered a rule-based cascade detector over 3 LSTMs and an Isolation Forest (<strong>0.95 AUROC</strong>, 0 false alarms), made 10× faster with O(n) features.</li>
+              <li>Built a LangChain master agent that grades severity into 4 tiers and routes tasks to custom sub-agents.</li>
+            </ul>
+            <div class="pills"><span class="pill">LSTM</span><span class="pill">Isolation Forest</span><span class="pill">LangChain</span></div>
+          </div>
+        </li>
+
+        <!-- BHAKTI MAP -->
+        <li class="tl-item reveal" data-track="engineering data">
+          <div class="tl-date"><span>Nov 2025</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-eng">Engineering</span><span class="tag tag-neutral">Bachelor thesis</span></div>
+            <h3>Bhakti Tradition Map</h3>
+            <p class="tl-org">Under Dr. Priyadarshi Patnaik · HSS, IIT Kharagpur</p>
+            <p class="tl-lede">Turned 1,300 years of fragmented, multilingual, often undated saint records into a map you can filter, search and explore in under 250 ms.</p>
+            <a href="#engineering" class="tl-link">Read the full write-up <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </li>
+
+        <!-- INDIAN CASE CHALLENGE -->
+        <li class="tl-item reveal" data-track="product">
+          <div class="tl-date"><span>Dec 2024 – Jan 2025</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-product">Strategy</span><span class="tag tag-award"><i class="fa-solid fa-trophy"></i> 2nd of 2,200+</span></div>
+            <h3>National Runner-up · Indian Case Challenge</h3>
+            <p class="tl-org">Business Club · IIT Kharagpur</p>
+            <p class="tl-lede">Bikaji Foods' entry plan into the ₹242 Bn organised western-snacks market at over 20% revenue growth.</p>
+            <ul class="tl-list">
+              <li>Found that <strong>72%</strong> of sales were locked in just 3 states and 30% rode on a single product, then ranked 3 buyer cohorts to pick the launch segment.</li>
+              <li>Built the launch on the <strong>85%</strong> general-trade channel with a commission-led retailer app, using ML demand forecasts to cut logistics costs by 20%.</li>
+              <li>Screened 5 acquisition targets to back Loyka at ₹86 Cr for 51%, defending a <strong>₹155 Cr NPV</strong>, 28% IRR and 2.2-year payback.</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- GENERAL SECRETARY -->
+        <li class="tl-item reveal" data-track="leadership">
+          <div class="tl-date"><span>Aug 2024 – Jul 2025</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-lead">Leadership</span></div>
+            <h3>General Secretary, Social &amp; Cultural</h3>
+            <p class="tl-org">Patel Hall of Residence · IIT Kharagpur</p>
+            <p class="tl-lede">Represented Patel Hall on IIT Kharagpur's social and cultural subcommittee, which makes decisions affecting 15,000+ students.</p>
+            <ul class="tl-list">
+              <li>Elected by <strong>440+ students</strong>; led a community of 200+, including five secretaries, across all of the hall's social and cultural activities.</li>
+              <li>Negotiated a <strong>₹2.75L</strong> budget for participation in 18 GC events and 15+ Open IITs.</li>
+              <li>Revived the Patelian yearbook after 10 years, and doubled podium finishes with top-4 placings in 8 events. Co-directed a silver-winning Nukkad Natak.</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- SPRING FEST -->
+        <li class="tl-item reveal" data-track="leadership ops">
+          <div class="tl-date"><span>Aug 2023 – May 2024</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-lead">Leadership</span><span class="tag tag-ops">Operations</span></div>
+            <h3>Core Organising Team</h3>
+            <p class="tl-org">Spring Fest · IIT Kharagpur</p>
+            <p class="tl-lede">Ran operations across publicity, events, pronites, sponsorship and marketing for Asia's largest social and cultural festival.</p>
+            <ul class="tl-list">
+              <li>Co-headed <strong>49 associates</strong> and 250+ campus ambassadors, extending reach to 1,200+ colleges and landing 350+ media features.</li>
+              <li>Ran alumni contribution drives in Delhi and UP that raised <strong>₹7.52 Lakhs</strong>.</li>
+              <li>Ran nationwide prelims across 5 state-capital regions with 15+ colleges and 5 rock bands for Wildfire Shillong.</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- COMEDY CLUB -->
+        <li class="tl-item reveal" data-track="leadership">
+          <div class="tl-date"><span>Sep 2023 – May 2024</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-lead">Leadership</span></div>
+            <h3>Senior Member</h3>
+            <p class="tl-org">Technology Comedy Club · Technology Students' Gymkhana</p>
+            <p class="tl-lede">Trained 130+ members in India's largest student-run comedy club. Organised events for audiences of 2,000+ and co-directed and co-wrote the short film <em>Comception</em> with a team of 15+.</p>
+          </div>
+        </li>
+
+        <!-- EARLY ENGINEERING -->
+        <li class="tl-item reveal" data-track="engineering">
+          <div class="tl-date"><span>2023 – 2024</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-tags"><span class="tag tag-eng">Engineering</span></div>
+            <h3>Where it started: full-stack projects</h3>
+            <p class="tl-org">Kiyo.AI (AlgoZenith Hackathon) · URL Shortener</p>
+            <p class="tl-lede">An AI coding assistant Chrome extension and a link-analytics app, built while learning React, Node and the Gemini API.</p>
+            <a href="#engineering" class="tl-link">See the engineering path <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </li>
+
+        <!-- JOINED IIT -->
+        <li class="tl-item reveal" data-track="leadership engineering">
+          <div class="tl-date"><span>2022</span></div>
+          <div class="tl-dot"></div>
+          <div class="tl-card tl-card-quiet">
+            <h3>Joined IIT Kharagpur</h3>
+            <p class="tl-org">B.Tech (Hons.) + M.Tech dual degree · Agricultural &amp; Food Engineering</p>
+            <p class="tl-lede">AIR 8454 in JEE Advanced 2022.</p>
+          </div>
+        </li>
+
+      </ol>
+      <a href="assets/CV.pdf" download class="text-link resume-link">View full résumé <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+
+    <!-- HOW I WORK -->
+    <section id="principles" class="section">
+      <h2 class="section-label">How I work</h2>
+      <p class="section-note reveal">Six habits, each with the place I learned it.</p>
+      <ol class="principles">
+        <li class="principle reveal">
+          <span class="p-num">01</span>
+          <div>
+            <h3>Go where the user already is.</h3>
+            <p>Farmers had smartphones in the house but never used them for farming, so AnnaData runs on SMS, on the phone they actually carry.</p>
+          </div>
+        </li>
+        <li class="principle reveal">
+          <span class="p-num">02</span>
+          <div>
+            <h3>Kill the plan the data won't support.</h3>
+            <p>I built the Zimbabwe → Slovakia GTM from scratch, then dropped it once per-company hiring quotas capped it at 2–3 placements a month.</p>
+          </div>
+        </li>
+        <li class="principle reveal">
+          <span class="p-num">03</span>
+          <div>
+            <h3>Fix the system before the people.</h3>
+            <p>Conversion wasn't stuck because of effort. One role was doing two jobs. Splitting qualify from sell took it from 1.3% to 1.8%.</p>
+          </div>
+        </li>
+        <li class="principle reveal">
+          <span class="p-num">04</span>
+          <div>
+            <h3>Ground every claim in a primary source.</h3>
+            <p>125+ farmer interviews before the MVP, and pesticide advice parsed from 6 statutory CIB&amp;RC registers rather than scraped from blogs.</p>
+          </div>
+        </li>
+        <li class="principle reveal">
+          <span class="p-num">05</span>
+          <div>
+            <h3>Automate the report nobody wants to make.</h3>
+            <p>Power BI on live SAP turned a 4-day monthly cycle into minutes. At Skillbee, a pandas pipeline produced the weekly recruiter scorecards.</p>
+          </div>
+        </li>
+        <li class="principle reveal">
+          <span class="p-num">06</span>
+          <div>
+            <h3>Prioritise out loud.</h3>
+            <p>For InsurePlus, RICE scores (36.4 → 9.2) against a fixed 2,700 dev-hour budget made the sequencing argument for me.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+
+    <!-- RECOGNITION -->
+    <section id="recognition" class="section">
+      <h2 class="section-label">Recognition</h2>
+      <ul class="awards reveal">
+        <li><span class="award-year">2026</span><span class="award-what"><strong>Gold</strong>, General Championship Product Management, IIT KGP</span></li>
+        <li><span class="award-year">2026</span><span class="award-what"><strong>AIR 44</strong>, GATE (Agricultural Engineering)</span></li>
+        <li><span class="award-year">2026</span><span class="award-what"><strong>Bronze</strong>, General Championship Data Analytics, IIT KGP</span></li>
+        <li><span class="award-year">2026</span><span class="award-what"><strong>Semifinalist</strong>, EY Techathon 6.0</span></li>
+        <li><span class="award-year">2025</span><span class="award-what"><strong>National Runner-up</strong>, Indian Case Challenge (2nd of 2,200+ teams)</span></li>
+        <li><span class="award-year">—</span><span class="award-what"><strong>Silver</strong>, Nukkad Natak at the General Championship (co-director)</span></li>
+        <li><span class="award-year">—</span><span class="award-what"><strong>Bronze</strong>, Open IIT Stand-up</span></li>
+        <li><span class="award-year">2022</span><span class="award-what"><strong>AIR 8454</strong>, JEE Advanced</span></li>
+      </ul>
+    </section>
+
+
+    <!-- TOOLKIT -->
+    <section id="toolkit" class="section">
+      <h2 class="section-label">Toolkit</h2>
+      <div class="toolkit">
+        <div class="tool-col reveal">
+          <h3><i class="fa-solid fa-compass-drafting"></i> Product &amp; strategy</h3>
+          <ul>
+            <li>User research &amp; interviews</li>
+            <li>Market sizing (TAM / SAM / SOM)</li>
+            <li>Journey mapping &amp; personas</li>
+            <li>RICE prioritisation &amp; roadmaps</li>
+            <li>GTM &amp; market entry</li>
+            <li>ROI, NPV &amp; IRR modelling</li>
           </ul>
-        </details>
-        <div class="pills"><span class="pill">Zoho CRM</span><span class="pill">Deluge</span><span class="pill">Python</span><span class="pill">pandas</span><span class="pill">Google &amp; Meta Ads</span></div>
+        </div>
+        <div class="tool-col reveal">
+          <h3><i class="fa-solid fa-chart-line"></i> Data &amp; analytics</h3>
+          <ul>
+            <li>SQL: CTEs, window functions</li>
+            <li>Python: pandas, NumPy, scikit-learn</li>
+            <li>Funnel &amp; cohort analysis</li>
+            <li>KPI definition &amp; dashboards</li>
+            <li>Segmentation, retention &amp; forecasting</li>
+            <li>Statistical testing &amp; regression</li>
+          </ul>
+        </div>
+        <div class="tool-col reveal">
+          <h3><i class="fa-solid fa-toolbox"></i> Tools &amp; platforms</h3>
+          <ul>
+            <li>Power BI · Advanced Excel</li>
+            <li>SAP Business One (HANA)</li>
+            <li>Zoho CRM · Deluge</li>
+            <li>Google Cloud Platform</li>
+            <li>Figma · TablePlus</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
       </div>
-    </li>
+    </section>
 
-    <!-- GC DATA ANALYTICS -->
-    <li class="tl-item reveal" data-track="data">
-      <div class="tl-date"><span>Mar – Apr 2026</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-data">Data</span><span class="tag tag-award"><i class="fa-solid fa-medal"></i> Bronze</span></div>
-        <h3>General Championship · Data Analytics</h3>
-        <p class="tl-org">IIT Kharagpur · Patel Hall, against 20+ halls</p>
-        <p class="tl-lede">Optimised marketing ROI for ElectroMart, an Ontario e-retailer, using predictive modelling and budget allocation across 9 channels.</p>
-        <ul class="tl-list">
-          <li>Ran KPI-driven EDA to surface the main revenue levers, discount elasticity and retention patterns.</li>
-          <li>Engineered RFM, loyalty, lifecycle and sale-week features on <strong>1.65M orders</strong> and benchmarked 6 models, including XGBoost, CatBoost and a DNN.</li>
-          <li>Optimised budget across <strong>9 marketing channels</strong> with ROI estimators and dynamic allocation.</li>
-        </ul>
-        <div class="pills"><span class="pill">Python</span><span class="pill">XGBoost</span><span class="pill">RFM</span><span class="pill">Marketing mix</span></div>
-      </div>
-    </li>
 
-    <!-- GC PRODUCT MANAGEMENT -->
-    <li class="tl-item reveal" data-track="product">
-      <div class="tl-date"><span>Feb – Mar 2026</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-product">Product</span><span class="tag tag-award"><i class="fa-solid fa-medal"></i> Gold</span></div>
-        <h3>General Championship · Product Management</h3>
-        <p class="tl-org">IIT Kharagpur</p>
-        <p class="tl-lede">Designed InsurePlus, a super-app bringing 3–5 disjoint household policies into a single plan: telemedicine, gig cover, family vault and travel SOS.</p>
-        <ul class="tl-list">
-          <li>Quantified a <strong>₹25,000 Cr</strong> premium opportunity across 60 Cr uninsured adults in a 90 Cr base, anchored on health insurance's 17.8% CAGR.</li>
-          <li>Mapped a 5-stage buying journey across 3 personas and 5 incumbents, isolating <strong>70%</strong> confusion at selection and <strong>20%</strong> satisfaction at renewal.</li>
-          <li>Prioritised 4 modules with <strong>RICE</strong> (36.4 → 9.2) within a 2,700 dev-hour budget, sequencing telemedicine first for its 10 Mn/yr reach, across 4 phases.</li>
-        </ul>
-        <div class="pills"><span class="pill">Market sizing</span><span class="pill">Journey mapping</span><span class="pill">RICE</span><span class="pill">Roadmapping</span></div>
-      </div>
-    </li>
-
-    <!-- EY TECHATHON -->
-    <li class="tl-item reveal" data-track="data engineering">
-      <div class="tl-date"><span>Feb – Mar 2026</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-data">Data</span><span class="tag tag-eng">Engineering</span><span class="tag tag-award">Semifinalist</span></div>
-        <h3>EY Techathon 6.0 · AfterCare AI</h3>
-        <p class="tl-org">Vehicle predictive-maintenance platform for commercial fleets</p>
-        <p class="tl-lede">A master agentic layer over live telemetry that predicts subsystem failures and routes the follow-up work.</p>
-        <ul class="tl-list">
-          <li>Trained per-subsystem LSTMs on <strong>8 telemetry channels</strong> (288-step sequences, log-RUL outputs) to predict DPF and SCR failures <strong>15–20 days</strong> early.</li>
-          <li>Layered a rule-based cascade detector over 3 LSTMs and an Isolation Forest (<strong>0.95 AUROC</strong>, 0 false alarms), made 10× faster with O(n) features.</li>
-          <li>Built a LangChain master agent that grades severity into 4 tiers and routes tasks to custom sub-agents.</li>
-        </ul>
-        <div class="pills"><span class="pill">LSTM</span><span class="pill">Isolation Forest</span><span class="pill">LangChain</span></div>
-      </div>
-    </li>
-
-    <!-- BHAKTI MAP -->
-    <li class="tl-item reveal" data-track="engineering data">
-      <div class="tl-date"><span>Nov 2025</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-eng">Engineering</span><span class="tag tag-neutral">Bachelor thesis</span></div>
+    <!-- ENGINEERING PATH -->
+    <section id="engineering" class="section">
+      <h2 class="section-label">The engineering path</h2>
+      <p class="section-note reveal">I came to product through engineering. These are the projects from that path, and they're why I can scope a build honestly and talk to engineers in their own terms.</p>
+      <!-- FEATURED: BHAKTI TRADITION MAP -->
+      <article class="featured reveal">
+        <p class="featured-label">Featured · Bachelor thesis</p>
         <h3>Bhakti Tradition Map</h3>
-        <p class="tl-org">Under Dr. Priyadarshi Patnaik · HSS, IIT Kharagpur</p>
-        <p class="tl-lede">Turned 1,300 years of fragmented, multilingual, often undated saint records into a map you can filter, search and explore in under 250 ms.</p>
-        <a href="#engineering" class="tl-link">Read the full write-up <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </li>
-
-    <!-- INDIAN CASE CHALLENGE -->
-    <li class="tl-item reveal" data-track="product">
-      <div class="tl-date"><span>Dec 2024 – Jan 2025</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-product">Strategy</span><span class="tag tag-award"><i class="fa-solid fa-trophy"></i> 2nd of 2,200+</span></div>
-        <h3>National Runner-up · Indian Case Challenge</h3>
-        <p class="tl-org">Business Club · IIT Kharagpur</p>
-        <p class="tl-lede">Bikaji Foods' entry plan into the ₹242 Bn organised western-snacks market at over 20% revenue growth.</p>
-        <ul class="tl-list">
-          <li>Found that <strong>72%</strong> of sales were locked in just 3 states and 30% rode on a single product, then ranked 3 buyer cohorts to pick the launch segment.</li>
-          <li>Built the launch on the <strong>85%</strong> general-trade channel with a commission-led retailer app, using ML demand forecasts to cut logistics costs by 20%.</li>
-          <li>Screened 5 acquisition targets to back Loyka at ₹86 Cr for 51%, defending a <strong>₹155 Cr NPV</strong>, 28% IRR and 2.2-year payback.</li>
-        </ul>
-      </div>
-    </li>
-
-    <!-- GENERAL SECRETARY -->
-    <li class="tl-item reveal" data-track="leadership">
-      <div class="tl-date"><span>Aug 2024 – Jul 2025</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-lead">Leadership</span></div>
-        <h3>General Secretary, Social &amp; Cultural</h3>
-        <p class="tl-org">Patel Hall of Residence · IIT Kharagpur</p>
-        <p class="tl-lede">Represented Patel Hall on IIT Kharagpur's social and cultural subcommittee, which makes decisions affecting 15,000+ students.</p>
-        <ul class="tl-list">
-          <li>Elected by <strong>440+ students</strong>; led a community of 200+, including five secretaries, across all of the hall's social and cultural activities.</li>
-          <li>Negotiated a <strong>₹2.75L</strong> budget for participation in 18 GC events and 15+ Open IITs.</li>
-          <li>Revived the Patelian yearbook after 10 years, and doubled podium finishes with top-4 placings in 8 events. Co-directed a silver-winning Nukkad Natak.</li>
-        </ul>
-      </div>
-    </li>
-
-    <!-- SPRING FEST -->
-    <li class="tl-item reveal" data-track="leadership ops">
-      <div class="tl-date"><span>Aug 2023 – May 2024</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-lead">Leadership</span><span class="tag tag-ops">Operations</span></div>
-        <h3>Core Organising Team</h3>
-        <p class="tl-org">Spring Fest · IIT Kharagpur</p>
-        <p class="tl-lede">Ran operations across publicity, events, pronites, sponsorship and marketing for Asia's largest social and cultural festival.</p>
-        <ul class="tl-list">
-          <li>Co-headed <strong>49 associates</strong> and 250+ campus ambassadors, extending reach to 1,200+ colleges and landing 350+ media features.</li>
-          <li>Ran alumni contribution drives in Delhi and UP that raised <strong>₹7.52 Lakhs</strong>.</li>
-          <li>Ran nationwide prelims across 5 state-capital regions with 15+ colleges and 5 rock bands for Wildfire Shillong.</li>
-        </ul>
-      </div>
-    </li>
-
-    <!-- COMEDY CLUB -->
-    <li class="tl-item reveal" data-track="leadership">
-      <div class="tl-date"><span>Sep 2023 – May 2024</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-lead">Leadership</span></div>
-        <h3>Senior Member</h3>
-        <p class="tl-org">Technology Comedy Club · Technology Students' Gymkhana</p>
-        <p class="tl-lede">Trained 130+ members in India's largest student-run comedy club. Organised events for audiences of 2,000+ and co-directed and co-wrote the short film <em>Comception</em> with a team of 15+.</p>
-      </div>
-    </li>
-
-    <!-- EARLY ENGINEERING -->
-    <li class="tl-item reveal" data-track="engineering">
-      <div class="tl-date"><span>2023 – 2024</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <div class="tl-tags"><span class="tag tag-eng">Engineering</span></div>
-        <h3>Where it started: full-stack projects</h3>
-        <p class="tl-org">Kiyo.AI (AlgoZenith Hackathon) · URL Shortener</p>
-        <p class="tl-lede">An AI coding assistant Chrome extension and a link-analytics app, built while learning React, Node and the Gemini API.</p>
-        <a href="#engineering" class="tl-link">See the engineering path <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </li>
-
-    <!-- JOINED IIT -->
-    <li class="tl-item reveal" data-track="leadership engineering">
-      <div class="tl-date"><span>2022</span></div>
-      <div class="tl-dot"></div>
-      <div class="tl-card tl-card-quiet">
-        <h3>Joined IIT Kharagpur</h3>
-        <p class="tl-org">B.Tech (Hons.) + M.Tech dual degree · Agricultural &amp; Food Engineering</p>
-        <p class="tl-lede">AIR 8454 in JEE Advanced 2022.</p>
-      </div>
-    </li>
-
-  </ol>
-</section>
-
-
-<!-- TOOLKIT -->
-<section id="toolkit" class="section">
-  <div class="section-head reveal">
-    <p class="kicker">03 — Toolkit</p>
-    <h2>How I work</h2>
-  </div>
-
-  <div class="toolkit">
-    <div class="tool-col reveal">
-      <h3><i class="fa-solid fa-compass-drafting"></i> Product &amp; strategy</h3>
-      <ul>
-        <li>User research &amp; interviews</li>
-        <li>Market sizing (TAM / SAM / SOM)</li>
-        <li>Journey mapping &amp; personas</li>
-        <li>RICE prioritisation &amp; roadmaps</li>
-        <li>GTM &amp; market entry</li>
-        <li>ROI, NPV &amp; IRR modelling</li>
-      </ul>
-    </div>
-    <div class="tool-col reveal">
-      <h3><i class="fa-solid fa-chart-line"></i> Data &amp; analytics</h3>
-      <ul>
-        <li>SQL: CTEs, window functions</li>
-        <li>Python: pandas, NumPy, scikit-learn</li>
-        <li>Funnel &amp; cohort analysis</li>
-        <li>KPI definition &amp; dashboards</li>
-        <li>Segmentation, retention &amp; forecasting</li>
-        <li>Statistical testing &amp; regression</li>
-      </ul>
-    </div>
-    <div class="tool-col reveal">
-      <h3><i class="fa-solid fa-toolbox"></i> Tools &amp; platforms</h3>
-      <ul>
-        <li>Power BI · Advanced Excel</li>
-        <li>SAP Business One (HANA)</li>
-        <li>Zoho CRM · Deluge</li>
-        <li>Google Cloud Platform</li>
-        <li>Figma · TablePlus</li>
-        <li>Git / GitHub</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<!-- ENGINEERING PATH -->
-<section id="engineering" class="section section-alt">
-  <div class="section-head reveal">
-    <p class="kicker">04 — The engineering path</p>
-    <h2>Before product, I built software</h2>
-    <p class="section-sub">I came to product through engineering. These are the projects from that path, and they're why I can scope a build honestly and talk to engineers in their own terms.</p>
-  </div>
-
-  <!-- FEATURED: BHAKTI TRADITION MAP -->
-  <article class="featured reveal">
-    <p class="featured-label">Featured · Bachelor thesis</p>
-    <h3>Bhakti Tradition Map</h3>
-    <p class="featured-sub">
-      Interactive spatial–temporal visualisation of Bhakti saint networks · Under Dr. Priyadarshi Patnaik, Dept. of Humanities &amp; Social Sciences, IIT Kharagpur · Nov 2025
-    </p>
-
-    <div class="spec-grid">
-      <div class="spec-item"><span class="spec-num">1,300</span><span class="spec-label">Years mapped (600–1900 CE)</span></div>
-      <div class="spec-item"><span class="spec-num">8</span><span class="spec-label">Filter dimensions</span></div>
-      <div class="spec-item"><span class="spec-num">6</span><span class="spec-label">REST endpoints</span></div>
-      <div class="spec-item"><span class="spec-num">&lt;150ms</span><span class="spec-label">Avg. API response</span></div>
-    </div>
-
-    <div class="featured-body">
-      <div class="featured-col">
-        <p>
-          The Bhakti movement spans roughly <strong>600–1900 CE</strong> and five major traditions: Vaishnava, Shaiva, Sant, Sufi and Shakta. The scholarship on it is excellent but scattered across static maps, linear chronologies and biographical records in a dozen languages. You can read about Kabir, or about the Alvars, but you can't easily <em>see</em> how devotional traditions moved across the subcontinent, or which lineages clustered where and when.
-        </p>
-        <p>
-          I built a web platform that answers that question interactively. It's a three-tier system where a researcher can filter 1,300 years of saint records by tradition, century, gender, language or philosophical school and watch the map redraw in under 250 ms.
+        <p class="featured-sub">
+          Interactive spatial–temporal visualisation of Bhakti saint networks · Under Dr. Priyadarshi Patnaik, Dept. of Humanities &amp; Social Sciences, IIT Kharagpur · Nov 2025
         </p>
 
-        <p class="featured-h">Hardest problem</p>
-        <p>
-          Historical uncertainty. Many saints have disputed or unknown dates, and the same place appears under three spellings across sources. Rather than claim a precision the sources don't support, I modelled period ranges instead of exact dates and relied on Nominatim's variant handling for place names. That was a data-modelling decision, not a coding one.
-        </p>
-      </div>
+        <div class="spec-grid">
+          <div class="spec-item"><span class="spec-num">1,300</span><span class="spec-label">Years mapped (600–1900 CE)</span></div>
+          <div class="spec-item"><span class="spec-num">8</span><span class="spec-label">Filter dimensions</span></div>
+          <div class="spec-item"><span class="spec-num">6</span><span class="spec-label">REST endpoints</span></div>
+          <div class="spec-item"><span class="spec-num">&lt;150ms</span><span class="spec-label">Avg. API response</span></div>
+        </div>
 
-      <div class="featured-col">
-        <p class="featured-h">Engineering decisions</p>
-        <ul class="featured-list">
-          <li><strong>Vanilla JS over React.</strong> No build step, a smaller bundle, and direct DOM control for Leaflet markers, chosen so a future student maintainer could pick it up without toolchain overhead.</li>
-          <li><strong>MongoDB over a relational store.</strong> Saint records are very uneven: some have precise dates and samadhi coordinates, most don't. A document schema with optional fields models that honestly instead of forcing nulls into rigid columns.</li>
-          <li><strong>Marker clustering with chunked loading.</strong> Rendering hundreds of individual points was slow, so I clustered at a 50px radius and de-clustered progressively up to zoom 15 to keep interaction smooth.</li>
-          <li><strong>Server-side geocoding via Nominatim.</strong> Contributors submit place names, not coordinates, so the API resolves them on submission, with caching and batching to respect rate limits.</li>
-        </ul>
+        <div class="featured-body">
+          <div class="featured-col">
+            <p>
+              The Bhakti movement spans roughly <strong>600–1900 CE</strong> and five major traditions: Vaishnava, Shaiva, Sant, Sufi and Shakta. The scholarship on it is excellent but scattered across static maps, linear chronologies and biographical records in a dozen languages. You can read about Kabir, or about the Alvars, but you can't easily <em>see</em> how devotional traditions moved across the subcontinent, or which lineages clustered where and when.
+            </p>
+            <p>
+              I built a web platform that answers that question interactively. It's a three-tier system where a researcher can filter 1,300 years of saint records by tradition, century, gender, language or philosophical school and watch the map redraw in under 250 ms.
+            </p>
 
-        <p class="featured-h">Architecture</p>
-        <ul class="featured-list">
-          <li><strong>Frontend:</strong> ES6+ modules, Leaflet 1.9.4, markercluster 1.5.3, CartoDB tiles with light/dark/auto theming.</li>
-          <li><strong>Backend:</strong> Node 18 + Express 4.19, MongoDB driver 6.18, CORS-restricted origins, server-side input validation.</li>
-          <li><strong>Data:</strong> MongoDB Atlas, indexed on tradition, type, gender, language and startYear, plus a text index for search.</li>
-          <li><strong>Deploy:</strong> Vercel for the static frontend and Render for the API, with environment-based endpoint switching.</li>
-        </ul>
+            <p class="featured-h">Hardest problem</p>
+            <p>
+              Historical uncertainty. Many saints have disputed or unknown dates, and the same place appears under three spellings across sources. Rather than claim a precision the sources don't support, I modelled period ranges instead of exact dates and relied on Nominatim's variant handling for place names. That was a data-modelling decision, not a coding one.
+            </p>
+          </div>
 
-        <p class="featured-h">Also built in</p>
-        <ul class="featured-list">
-          <li>Community contribution flow with place autocomplete and validation.</li>
-          <li>Debounced live search (300 ms) across names, traditions and philosophy.</li>
-          <li><code>aria-live</code> screen-reader announcements and a mobile-first responsive layout.</li>
-        </ul>
-      </div>
-    </div>
+          <div class="featured-col">
+            <p class="featured-h">Engineering decisions</p>
+            <ul class="featured-list">
+              <li><strong>Vanilla JS over React.</strong> No build step, a smaller bundle, and direct DOM control for Leaflet markers, chosen so a future student maintainer could pick it up without toolchain overhead.</li>
+              <li><strong>MongoDB over a relational store.</strong> Saint records are very uneven: some have precise dates and samadhi coordinates, most don't. A document schema with optional fields models that honestly instead of forcing nulls into rigid columns.</li>
+              <li><strong>Marker clustering with chunked loading.</strong> Rendering hundreds of individual points was slow, so I clustered at a 50px radius and de-clustered progressively up to zoom 15 to keep interaction smooth.</li>
+              <li><strong>Server-side geocoding via Nominatim.</strong> Contributors submit place names, not coordinates, so the API resolves them on submission, with caching and batching to respect rate limits.</li>
+            </ul>
 
-    <div class="pills">
-      <span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">MongoDB</span>
-      <span class="pill">Leaflet.js</span><span class="pill">Nominatim</span><span class="pill">Vanilla JS</span>
-    </div>
+            <p class="featured-h">Architecture</p>
+            <ul class="featured-list">
+              <li><strong>Frontend:</strong> ES6+ modules, Leaflet 1.9.4, markercluster 1.5.3, CartoDB tiles with light/dark/auto theming.</li>
+              <li><strong>Backend:</strong> Node 18 + Express 4.19, MongoDB driver 6.18, CORS-restricted origins, server-side input validation.</li>
+              <li><strong>Data:</strong> MongoDB Atlas, indexed on tradition, type, gender, language and startYear, plus a text index for search.</li>
+              <li><strong>Deploy:</strong> Vercel for the static frontend and Render for the API, with environment-based endpoint switching.</li>
+            </ul>
 
-    <div class="link-row">
-      <a href="https://bhakti-tradition-map-vo8a.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-      <a href="https://github.com/vibhuu22/bhakti-tradition-map" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
-      <a href="assets/BTP_Report.pdf" target="_blank" class="btn btn-ghost">Read thesis</a>
-    </div>
-  </article>
+            <p class="featured-h">Also built in</p>
+            <ul class="featured-list">
+              <li>Community contribution flow with place autocomplete and validation.</li>
+              <li>Debounced live search (300 ms) across names, traditions and philosophy.</li>
+              <li><code>aria-live</code> screen-reader announcements and a mobile-first responsive layout.</li>
+            </ul>
+          </div>
+        </div>
 
-  <div class="mini-projects">
-    <article class="mini reveal">
-      <i class="fa-brands fa-chrome mini-icon"></i>
-      <h3>Kiyo.AI Chrome Extension</h3>
-      <p>An AI coding assistant where the engineering was in context management, not the API call: persistent chat history per problem, prompts built dynamically from page state, and local storage keyed to each coding problem so conversations survive navigation. Built at the AlgoZenith Hackathon on the Gemini API.</p>
-      <div class="pills"><span class="pill">JavaScript</span><span class="pill">Gemini API</span><span class="pill">Chrome API</span><span class="pill">Prompt engineering</span></div>
-      <div class="link-row">
-        <a href="https://www.youtube.com/watch?v=fJL-K2Cgpm0&t=141s" target="_blank" rel="noopener" class="text-link">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        <a href="https://github.com/vibhuu22/Kiyo.AI" target="_blank" rel="noopener" class="text-link">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-      </div>
-    </article>
-
-    <article class="mini reveal">
-      <i class="fa-solid fa-link mini-icon"></i>
-      <h3>URL Shortener</h3>
-      <p>A full-stack app with custom short links, click analytics, QR code generation and a user dashboard, reducing manual tracking effort by ~40%.</p>
-      <div class="pills"><span class="pill">React</span><span class="pill">Supabase</span><span class="pill">Tailwind CSS</span></div>
-      <div class="link-row">
-        <span class="text-link muted"><i class="fa-solid fa-clock"></i> Live demo coming soon</span>
-        <a href="https://github.com/vibhuu22" target="_blank" rel="noopener" class="text-link">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-      </div>
-    </article>
-  </div>
-
-  <div class="stack reveal">
-    <p class="featured-h">Engineering stack</p>
-    <div class="stack-grid">
-      <div><span class="stack-label">Languages</span>
         <div class="pills">
-          <span class="pill"><i class="devicon-c-plain colored"></i> C</span>
-          <span class="pill"><i class="devicon-cplusplus-plain colored"></i> C++</span>
-          <span class="pill"><i class="devicon-python-plain colored"></i> Python</span>
-          <span class="pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-          <span class="pill"><i class="devicon-azuresqldatabase-plain colored"></i> SQL</span>
-          <span class="pill"><i class="devicon-bash-plain"></i> Bash</span>
+          <span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">MongoDB</span>
+          <span class="pill">Leaflet.js</span><span class="pill">Nominatim</span><span class="pill">Vanilla JS</span>
+        </div>
+
+        <div class="link-row">
+          <a href="https://bhakti-tradition-map-vo8a.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/vibhuu22/bhakti-tradition-map" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="assets/BTP_Report.pdf" target="_blank" class="btn btn-ghost">Read thesis</a>
+        </div>
+      </article>
+
+      <div class="mini-projects">
+        <article class="mini reveal">
+          <i class="fa-brands fa-chrome mini-icon"></i>
+          <h3>Kiyo.AI Chrome Extension</h3>
+          <p>An AI coding assistant where the engineering was in context management, not the API call: persistent chat history per problem, prompts built dynamically from page state, and local storage keyed to each coding problem so conversations survive navigation. Built at the AlgoZenith Hackathon on the Gemini API.</p>
+          <div class="pills"><span class="pill">JavaScript</span><span class="pill">Gemini API</span><span class="pill">Chrome API</span><span class="pill">Prompt engineering</span></div>
+          <div class="link-row">
+            <a href="https://www.youtube.com/watch?v=fJL-K2Cgpm0&t=141s" target="_blank" rel="noopener" class="text-link">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/vibhuu22/Kiyo.AI" target="_blank" rel="noopener" class="text-link">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="mini reveal">
+          <i class="fa-solid fa-link mini-icon"></i>
+          <h3>URL Shortener</h3>
+          <p>A full-stack app with custom short links, click analytics, QR code generation and a user dashboard, reducing manual tracking effort by ~40%.</p>
+          <div class="pills"><span class="pill">React</span><span class="pill">Supabase</span><span class="pill">Tailwind CSS</span></div>
+          <div class="link-row">
+            <span class="text-link muted"><i class="fa-solid fa-clock"></i> Live demo coming soon</span>
+            <a href="https://github.com/vibhuu22" target="_blank" rel="noopener" class="text-link">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="stack reveal">
+        <p class="featured-h">Engineering stack</p>
+        <div class="stack-grid">
+          <div><span class="stack-label">Languages</span>
+            <div class="pills">
+              <span class="pill"><i class="devicon-c-plain colored"></i> C</span>
+              <span class="pill"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+              <span class="pill"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+              <span class="pill"><i class="devicon-azuresqldatabase-plain colored"></i> SQL</span>
+              <span class="pill"><i class="devicon-bash-plain"></i> Bash</span>
+            </div>
+          </div>
+          <div><span class="stack-label">Frontend</span>
+            <div class="pills">
+              <span class="pill"><i class="devicon-react-original colored"></i> React</span>
+              <span class="pill"><i class="devicon-html5-plain colored"></i> HTML5</span>
+              <span class="pill"><i class="devicon-css3-plain colored"></i> CSS3</span>
+              <span class="pill"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</span>
+              <span class="pill"><i class="devicon-leaflet-plain colored"></i> Leaflet.js</span>
+            </div>
+          </div>
+          <div><span class="stack-label">Backend</span>
+            <div class="pills">
+              <span class="pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+              <span class="pill"><i class="devicon-express-original"></i> Express</span>
+              <span class="pill"><i class="devicon-socketio-original"></i> Socket.IO</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">WebSockets</span>
+            </div>
+          </div>
+          <div><span class="stack-label">Databases</span>
+            <div class="pills">
+              <span class="pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+              <span class="pill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+              <span class="pill"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+            </div>
+          </div>
+          <div><span class="stack-label">Tools</span>
+            <div class="pills">
+              <span class="pill"><i class="devicon-git-plain colored"></i> Git</span>
+              <span class="pill"><i class="devicon-github-original"></i> GitHub</span>
+              <span class="pill"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+              <span class="pill"><i class="devicon-vercel-plain"></i> Vercel</span>
+              <span class="pill"><i class="devicon-render-plain"></i> Render</span>
+            </div>
+          </div>
+          <div><span class="stack-label">AI &amp; APIs</span>
+            <div class="pills">
+              <span class="pill"><i class="devicon-google-plain colored"></i> Gemini API</span>
+              <span class="pill"><i class="fa-brands fa-openai"></i> OpenAI API</span>
+              <span class="pill">LangChain</span>
+              <span class="pill">Nominatim</span>
+              <span class="pill">OAuth 2.0</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div><span class="stack-label">Frontend</span>
-        <div class="pills">
-          <span class="pill"><i class="devicon-react-original colored"></i> React</span>
-          <span class="pill"><i class="devicon-html5-plain colored"></i> HTML5</span>
-          <span class="pill"><i class="devicon-css3-plain colored"></i> CSS3</span>
-          <span class="pill"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</span>
-          <span class="pill"><i class="devicon-leaflet-plain colored"></i> Leaflet.js</span>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="section-label">Education</h2>
+      <div class="edu-list reveal">
+        <div class="edu-item">
+          <div class="edu-year">2022 – 27</div>
+          <div>
+            <h3>IIT Kharagpur</h3>
+            <p>B.Tech (Hons.) Agricultural &amp; Food Engineering + M.Tech Food Process Engineering</p>
+            <span class="edu-meta">CGPA 8.04 / 10 · 13 EX grades in 5 semesters · Micro-specialisations in AI &amp; Applications, and Entrepreneurship &amp; Innovation</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2021</div>
+          <div>
+            <h3>Madav Rao Scindia Public School</h3>
+            <p>CBSE Class XII · Shahjahanpur</p>
+            <span class="edu-meta">97.8%</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2019</div>
+          <div>
+            <h3>Takshashila Public School</h3>
+            <p>CBSE Class X · Shahjahanpur</p>
+            <span class="edu-meta">99%</span>
+          </div>
         </div>
       </div>
-      <div><span class="stack-label">Backend</span>
-        <div class="pills">
-          <span class="pill"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
-          <span class="pill"><i class="devicon-express-original"></i> Express</span>
-          <span class="pill"><i class="devicon-socketio-original"></i> Socket.IO</span>
-          <span class="pill">REST APIs</span>
-          <span class="pill">WebSockets</span>
+      <p class="beyond reveal">
+        <strong>Beyond work:</strong> mentored 20+ sophomores through SWG and hall programmes and guided 50+ JEE aspirants as an SME at PW.
+        I also raised ₹70,000+ in an orphanage drive, volunteered for the Pukaar social campaign, and captained the hall cricket team to runner-up among 12 teams.
+      </p>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-label">Contact</h2>
+      <div class="contact-intro reveal">
+        <h3 class="contact-title">Hiring for product, analytics or a founder's office?</h3>
+        <p>I usually reply within a day. LinkedIn is fastest, or use the form.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/vibhanshu-chaturvedi-b8a963209/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://wa.me/+917388535376" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a href="assets/CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> CV</a>
         </div>
       </div>
-      <div><span class="stack-label">Databases</span>
-        <div class="pills">
-          <span class="pill"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
-          <span class="pill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
-          <span class="pill"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+
+      <form class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7f074eb7-3f6e-430e-a20f-dcd816dfa564">
+
+        <div class="form-row">
+          <div>
+            <label for="name">Name*</label>
+            <input id="name" type="text" name="UserName" placeholder="Your name" class="contact-input" required>
+            <small class="error-message"></small>
+          </div>
+          <div>
+            <label for="email">Email*</label>
+            <input id="email" type="email" name="UserEmail" placeholder="you@company.com" class="contact-input" required>
+            <small class="error-message"></small>
+          </div>
         </div>
-      </div>
-      <div><span class="stack-label">Tools</span>
-        <div class="pills">
-          <span class="pill"><i class="devicon-git-plain colored"></i> Git</span>
-          <span class="pill"><i class="devicon-github-original"></i> GitHub</span>
-          <span class="pill"><i class="devicon-vscode-plain colored"></i> VS Code</span>
-          <span class="pill"><i class="devicon-vercel-plain"></i> Vercel</span>
-          <span class="pill"><i class="devicon-render-plain"></i> Render</span>
-        </div>
-      </div>
-      <div><span class="stack-label">AI &amp; APIs</span>
-        <div class="pills">
-          <span class="pill"><i class="devicon-google-plain colored"></i> Gemini API</span>
-          <span class="pill"><i class="fa-brands fa-openai"></i> OpenAI API</span>
-          <span class="pill">LangChain</span>
-          <span class="pill">Nominatim</span>
-          <span class="pill">OAuth 2.0</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
+        <label for="phone">Contact no.</label>
+        <input id="phone" type="tel" name="UserContact" placeholder="10-digit number" class="contact-input" pattern="[0-9]{10}" maxlength="10">
+        <small class="error-message"></small>
 
-<!-- EDUCATION & DISTINCTIONS -->
-<section id="education" class="section">
-  <div class="section-head reveal">
-    <p class="kicker">05 — Education</p>
-    <h2>Education &amp; distinctions</h2>
-  </div>
+        <label for="message">Message*</label>
+        <textarea name="message" id="message" class="contact-input" placeholder="What are you working on?" required></textarea>
+        <small class="error-message"></small>
 
-  <div class="edu-grid">
-    <div class="edu-list reveal">
-      <div class="edu-item">
-        <div class="edu-year">2022 – 27</div>
-        <div>
-          <h3>IIT Kharagpur</h3>
-          <p>B.Tech (Hons.) Agricultural &amp; Food Engineering + M.Tech Food Process Engineering</p>
-          <span class="edu-meta">CGPA 8.04 / 10 · Micro-specialisations in AI &amp; Applications, and Entrepreneurship &amp; Innovation</span>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-year">2021</div>
-        <div>
-          <h3>Madav Rao Scindia Public School</h3>
-          <p>CBSE Class XII · Shahjahanpur</p>
-          <span class="edu-meta">97.8%</span>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-year">2019</div>
-        <div>
-          <h3>Takshashila Public School</h3>
-          <p>CBSE Class X · Shahjahanpur</p>
-          <span class="edu-meta">99%</span>
-        </div>
-      </div>
-    </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+    </section>
 
-    <div class="distinctions reveal">
-      <div class="dist"><span class="dist-num">44</span><span class="dist-label">AIR · GATE 2026 (AG)</span></div>
-      <div class="dist"><span class="dist-num">8454</span><span class="dist-label">AIR · JEE Advanced 2022</span></div>
-      <div class="dist"><span class="dist-num">13</span><span class="dist-label">EX grades in 5 semesters</span></div>
-      <div class="dist"><span class="dist-num">20+</span><span class="dist-label">Sophomores mentored · 50+ JEE aspirants guided at PW</span></div>
-    </div>
-  </div>
+    <footer>
+      <p>Designed and built by hand in plain HTML, CSS and JavaScript, set in Instrument Serif and Inter, and hosted on GitHub Pages.</p>
+      <p>© 2026 Vibhanshu Chaturvedi · IIT Kharagpur</p>
+    </footer>
 
-  <p class="beyond reveal">
-    <strong>Beyond work:</strong> raised ₹70,000+ in an orphanage drive, volunteered for the Pukaar social campaign, won Bronze in Open IIT Stand-up,
-    and captained the hall cricket team to runner-up among 12 teams.
-  </p>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact" class="section contact">
-  <div class="contact-grid">
-    <div class="contact-intro reveal">
-      <p class="kicker">06 — Contact</p>
-      <h2>Hiring for product, analytics or a founder's office?</h2>
-      <p class="section-sub">I'm open to full-time PM, product analyst and strategy &amp; operations roles from 2027. I usually reply within a day.</p>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/vibhanshu-chaturvedi-b8a963209/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        <a href="https://wa.me/+917388535376" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        <a href="https://github.com/vibhuu22" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-        <a href="assets/CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
-      </div>
-    </div>
-
-    <form class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="7f074eb7-3f6e-430e-a20f-dcd816dfa564">
-
-      <label for="name">Name*</label>
-      <input id="name" type="text" name="UserName" placeholder="Your name" class="contact-input" required>
-      <small class="error-message"></small>
-
-      <label for="email">Email*</label>
-      <input id="email" type="email" name="UserEmail" placeholder="you@company.com" class="contact-input" required>
-      <small class="error-message"></small>
-
-      <label for="phone">Contact no.</label>
-      <input id="phone" type="tel" name="UserContact" placeholder="10-digit number" class="contact-input" pattern="[0-9]{10}" maxlength="10">
-      <small class="error-message"></small>
-
-      <label for="message">Message*</label>
-      <textarea name="message" id="message" class="contact-input" placeholder="What are you working on?" required></textarea>
-      <small class="error-message"></small>
-
-      <button type="submit" class="btn btn-primary">Send message</button>
-    </form>
-  </div>
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Vibhanshu Chaturvedi · IIT Kharagpur</p>
-  <div class="social-links">
-    <a href="https://github.com/vibhuu22" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/vibhanshu-chaturvedi-b8a963209/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/vibhuu.22/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://wa.me/+917388535376" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-  </div>
-</footer>
+  </main>
+</div>
 
 <script type="module" src="index.js"></script>
 </body>

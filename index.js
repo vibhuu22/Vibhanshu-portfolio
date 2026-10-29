@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* ------------------------------------------
-     THEME TOGGLE
+     THEME TOGGLE (rail + mobile top bar)
   ------------------------------------------ */
-  const themeToggle = document.getElementById("themeToggle");
+  const themeToggles = document.querySelectorAll(".theme-toggle");
   const root = document.documentElement;
 
   const isDark = () =>
@@ -26,20 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
       ? root.dataset.theme === "dark"
       : window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  const syncThemeIcon = () => {
-    themeToggle.innerHTML = isDark()
-      ? '<i class="fa-solid fa-sun"></i>'
-      : '<i class="fa-solid fa-moon"></i>';
+  const syncThemeIcons = () => {
+    themeToggles.forEach(btn => {
+      btn.innerHTML = isDark()
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+    });
   };
 
-  if (themeToggle) {
-    syncThemeIcon();
-    themeToggle.addEventListener("click", () => {
+  syncThemeIcons();
+  themeToggles.forEach(btn => {
+    btn.addEventListener("click", () => {
       root.dataset.theme = isDark() ? "light" : "dark";
       try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
-      syncThemeIcon();
+      syncThemeIcons();
     });
-  }
+  });
 
 
   /* ------------------------------------------
@@ -72,12 +74,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* ------------------------------------------
-     NAVBAR BORDER ON SCROLL
+     TOP BAR BORDER ON SCROLL (mobile)
   ------------------------------------------ */
-  const navbar = document.querySelector(".navbar");
-  const onScroll = () => navbar.classList.toggle("scrolled", window.scrollY > 8);
+  const topbar = document.querySelector(".topbar");
+  const onScroll = () => topbar.classList.toggle("scrolled", window.scrollY > 8);
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+
+  /* ------------------------------------------
+     ACTIVE SECTION IN RAIL NAV
+  ------------------------------------------ */
+  const navLinks = document.querySelectorAll(".rail-nav a");
+  const linkFor = id => document.querySelector(`.rail-nav a[href="#${id}"]`);
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        // Sections without a nav entry (recognition, toolkit…) keep the previous highlight
+        const link = linkFor(entry.target.id);
+        if (!link) return;
+        navLinks.forEach(l => l.classList.toggle("active", l === link));
+      });
+    },
+    { rootMargin: "-35% 0px -60% 0px" }
+  );
+
+  document.querySelectorAll("main section[id]").forEach(s => sectionObserver.observe(s));
+
+
+  /* ------------------------------------------
+     CURSOR SPOTLIGHT (desktop pointers only)
+  ------------------------------------------ */
+  if (window.matchMedia("(pointer: fine)").matches) {
+    window.addEventListener("pointermove", (e) => {
+      root.style.setProperty("--mx", `${e.clientX}px`);
+      root.style.setProperty("--my", `${e.clientY}px`);
+    }, { passive: true });
+  }
 
 
   /* ------------------------------------------
